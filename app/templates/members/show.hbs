@@ -1,0 +1,8 @@
+<img {{bind-attr src=gravatar}}>
+{{name}}<br>
+projects:
+<ul>
+{{#each projectMemberships}}
+  <li> {{project.name}}, {{role}}</li>
+{{/each}}
+</ul>

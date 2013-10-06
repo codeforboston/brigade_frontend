@@ -1,0 +1,14 @@
+<ul>
+{{#each}}
+  <li>
+    <img {{bind-attr src=gravatar}}>
+    {{#link-to 'members.show' this}}{{name}}{{/link-to}}<br>
+    projects:
+    <ul>
+    {{#each projectMemberships}}
+      <li> {{project.name}}, {{role}}</li>
+    {{/each}}
+    </ul>
+  </li>
+{{/each}}
+</ul>

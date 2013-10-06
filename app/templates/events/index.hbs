@@ -1,0 +1,7 @@
+Some kind of calendar view or something, maybe.
+{{#each}}
+  <div>
+    {{#link-to 'events.show' this}}{{name}}{{/link-to}}<br>
+    {{date startTime 'LLL'}}
+  </div>
+{{/each}}

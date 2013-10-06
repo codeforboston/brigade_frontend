@@ -1,0 +1,13 @@
+{
+  "name": "brigade-frontend",
+  "version": "0.0.0",
+  "dependencies": {
+    "ember": "~1.0.0",
+    "ember-data-shim": "~1.0.0",
+    "momentjs": "~2.2.1",
+    "bootstrap": "~3.0.0"
+  },
+  "devDependencies": {
+    "ember-mocha-adapter": "0.1.1"
+  }
+}

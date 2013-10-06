@@ -1,0 +1,10 @@
+{{#link-to 'projects'}}&laquo; back to all projects{{/link-to}}
+<h2>{{name}}</h2>
+<p>{{description}}</p>
+
+    skills: {{join skillsNeeded delimiter=', '}}
+    <ul>
+    {{#each projectMembers}}
+      <li><img {{bind-attr src=member.gravatar}}> {{#link-to 'members.show' member}}{{member.name}}{{/link-to}}: {{role}}</li>
+    {{/each}}
+    </ul>

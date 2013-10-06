@@ -1,0 +1,18 @@
+<ul>
+{{#each}}
+  <li>
+    {{#link-to 'projects.show' this}}{{name}}{{/link-to}}<br>
+    skills: {{join skillsNeeded delimiter=', '}}
+    <ul>
+{{!--     {{#each skill in skillsNeeded}}
+      <li><a href="#">{{skill}}</a></li>
+    {{/each}}
+ --}}    </ul>
+    <ul>
+    {{#each projectMembers}}
+      <li><img {{bind-attr src=member.gravatar}}> {{#link-to 'members.show' member}}{{member.name}}{{/link-to}}: {{role}}</li>
+    {{/each}}
+    </ul>
+  </li>
+{{/each}}
+</ul>
