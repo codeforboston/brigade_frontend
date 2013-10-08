@@ -17,15 +17,22 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-env');
 
     // configurable paths
     var yeomanConfig = {
         app: 'app',
+        build: '.tmp',
         dist: 'dist'
     };
 
     grunt.initConfig({
         yeoman: yeomanConfig,
+        bowerrc: grunt.file.readJSON('.bowerrc'),
+        env: {
+            dev: { env: 'dev' },
+            prod: { env: 'prod' }
+        },
         watch: {
             emberTemplates: {
                 files: '<%= yeoman.app %>/templates/**/*.hbs',
@@ -150,9 +157,9 @@ module.exports = function (grunt) {
             }
         },
         less: {
-            development: {
+            dev: {
                 options: {
-                    paths: ['<%= yeoman.app %>/bower_components'],
+                    paths: ['<%= bowerrc.directory %>'],
                     dumpLineNumbers: 'comments'
                 },
                 files: [{
@@ -163,9 +170,9 @@ module.exports = function (grunt) {
                     ext:    '.css'
                 }]
             },
-            production: {
+            dist: {
                 options: {
-                    paths: ['<%= yeoman.app %>/bower_components']
+                    paths: ['<%= bowerrc.directory %>']
                 },
                 files: [{
                     expand: true,
@@ -199,8 +206,14 @@ module.exports = function (grunt) {
                 }
             }
         },
+        preprocess: {
+            index: {
+                src: '<%= yeoman.app %>/index.html',
+                dest: '<%= yeoman.build %>/index.html'
+            }
+        },
         useminPrepare: {
-            html: '<%= yeoman.app %>/index.html',
+            html: '<%= yeoman.build %>/index.html',
             options: {
                 dest: '<%= yeoman.dist %>'
             }
@@ -284,17 +297,18 @@ module.exports = function (grunt) {
             server: [
                 'emberTemplates',
                 'coffee:dist',
-                'less'
+                'less:dev',
+                'preprocess:index'
             ],
             test: [
                 'emberTemplates',
                 'coffee',
-                'less'
+                'less:dev'
             ],
             dist: [
                 'emberTemplates',
                 'coffee',
-                'less:production',
+                'less:dist',
                 'imagemin',
                 'svgmin',
                 'htmlmin'
@@ -337,6 +351,7 @@ module.exports = function (grunt) {
         }
 
         grunt.task.run([
+            'env:dev',
             'clean:server',
             'concurrent:server',
             'neuter:app',
@@ -347,6 +362,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('test', [
+        'env:dev',
         'clean:server',
         'concurrent:test',
         'connect:test',
@@ -355,7 +371,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'env:prod',
         'clean:dist',
+        'preprocess:index',
         'useminPrepare',
         'concurrent:dist',
         'neuter:app',
