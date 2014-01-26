@@ -278,6 +278,25 @@ module.exports = function (grunt) {
         },
         // Put files not handled in other tasks here
         copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= bowerrc.directory %>',
+                        dest: '<%= yeoman.build %>/styles/fonts',
+                        flatten: true,
+                        src: '{bootstrap,font-awesome}/fonts/*'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.app %>',
+                        dest: '<%= yeoman.build %>',
+                        src: [
+                            'styles/fonts/*'
+                        ]
+                    }
+                ]
+        },
             dist: {
                 files: [{
                     expand: true,
@@ -354,6 +373,7 @@ module.exports = function (grunt) {
             'env:dev',
             'clean:server',
             'concurrent:server',
+            'copy',
             'neuter:app',
             'connect:livereload',
             'open',

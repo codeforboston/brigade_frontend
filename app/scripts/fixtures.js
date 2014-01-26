@@ -48,13 +48,52 @@ var projects = [
     "description": "Combining city data with a list of specific needs from food pantries will allow citizens to most effectively make useful and needed donations assisted by the Pantry Pick-Up App.",
     "repository": "https://github.com/codeforboston/pantry_pickup",
     "history": "https://github.com/codeforboston/pantry_pickup/contributors",
+    "projectPlan": "javascript:alert('I know it\\'s here somewhere, but just hit OK for now.');",
     "url": "http://www.pantrypickup.org",
     "status": "In Development",
     "projectMembers": [1, 2, 3, 4],
     "skillsNeeded": ["node.js", "python"],
-    "screenshots": [],
+    "screenshots": ["/images/pantry_pickup.png"],
     "pressClippings": [],
-    "featured": true
+    "featured": true,
+    "githubDetails": {
+      "id": 8141917,
+      "name": "pantry_pickup",
+      "full_name": "codeforboston/pantry_pickup",
+      "owner": {
+        "login": "codeforboston",
+        "id": 2533182,
+        "gravatar_id": "813975f07f37957ba1c45c726270b5dd",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "private": false,
+      "description": "Combining city data with a list of specific needs from food pantries will allow citizens to most effectively make useful and needed donations assisted by the Pantry Pick-Up App. ",
+      "fork": false,
+      "created_at": "2013-02-11T16:50:02Z",
+      "updated_at": "2014-01-08T00:22:59Z",
+      "pushed_at": "2013-12-04T03:20:11Z",
+      "homepage": "http://www.pantrypickup.org",
+      "size": 5735,
+      "stargazers_count": 14,
+      "watchers_count": 14,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "forks_count": 11,
+      "open_issues_count": 24,
+      "forks": 11,
+      "open_issues": 24,
+      "watchers": 14,
+      "default_branch": "master",
+      "master_branch": "master",
+      "permissions": {
+        "admin": false,
+        "push": false,
+        "pull": true
+      }
+    }
   },
   {
     "id": 2,
@@ -69,6 +108,102 @@ var projects = [
     "screenshots": [],
     "pressClippings": ["http://www.metro.us/boston/news/local/2013/06/11/code-for-boston-to-revive-mbta-alerts-twitter-account/"],
     "featured": false
+  },
+  {
+    "id": 3,
+    "name": "filter-template",
+    "url": "http://codeforboston.github.io/filter-template/",
+    "repository": "https://github.com/codeforboston/filter-template",
+    "description": "Generic \"find-a\" app for geographic datasets",
+    "projectMembers": [],
+    "skillsNeeded": [],
+    "githubDetails": {
+      "id": 13428942,
+      "name": "filter-template",
+      "full_name": "codeforboston/filter-template",
+      "owner": {
+        "login": "codeforboston",
+        "id": 2533182,
+        "gravatar_id": "813975f07f37957ba1c45c726270b5dd",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "private": false,
+      "description": "Generic \"find-a\" app for geographic datasets",
+      "fork": false,
+      "created_at": "2013-10-09T00:18:42Z",
+      "updated_at": "2013-12-31T18:29:34Z",
+      "pushed_at": "2013-11-13T19:31:28Z",
+      "homepage": "http://codeforboston.github.io/filter-template",
+      "size": 328,
+      "stargazers_count": 2,
+      "watchers_count": 2,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "forks_count": 9,
+      "open_issues_count": 10,
+      "forks": 9,
+      "open_issues": 10,
+      "watchers": 2,
+      "default_branch": "gh-pages",
+      "master_branch": "gh-pages",
+      "permissions": {
+        "admin": false,
+        "push": false,
+        "pull": true
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Vote Cambridge",
+    "description": "People of Cambridge, find your polling location.",
+    "repository": "https://github.com/codeforboston/cambridge_voting_locations",
+    "updated_at": "2014-01-19T20:01:12Z",
+    "url": "http://votecambridge.com/",
+    "projectMembers": [],
+    "skillsNeeded": [],
+    "created_at": "2014-01-19T20:01:12Z",
+    "githubDetails": {
+      "id": 12097612,
+      "name": "cambridge_voting_locations",
+      "full_name": "codeforboston/cambridge_voting_locations",
+      "owner": {
+        "login": "codeforboston",
+        "id": 2533182,
+        "gravatar_id": "813975f07f37957ba1c45c726270b5dd",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "private": false,
+      "description": "People of Cambridge, find your polling location.",
+      "fork": false,
+      "created_at": "2013-08-14T02:00:19Z",
+      "updated_at": "2013-11-25T18:09:25Z",
+      "pushed_at": "2013-11-05T00:11:19Z",
+      "homepage": "http://votecambridge.com",
+      "size": 6272,
+      "stargazers_count": 2,
+      "watchers_count": 2,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "forks": 3,
+      "open_issues": 0,
+      "watchers": 2,
+      "default_branch": "master",
+      "master_branch": "master",
+      "permissions": {
+        "admin": false,
+        "push": false,
+        "pull": true
+      }
+    }
   }
 ];
 var events = [
