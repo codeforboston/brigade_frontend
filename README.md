@@ -7,6 +7,9 @@ running the server
 ------------------
 
     npm install -g yo   # installs grunt and bower automatically
+    
+    #clone git repository and cd into it
+    
     npm install         # installs local node dependencies
     bower install       # installs local client-side library dependencies
     grunt server        # starts server
