@@ -1,45 +1,75 @@
+
+// typography
+.project-name{
+  text-align: center;
+}
+.section-title{
+  color: @brand-primary;
+  font-weight: 300;
+}
+
+// layout
 .project-container{
   .make-row;
 
-  .project-name{
-    text-align: center;
+  .project-description{
+    .make-row;
+    p{
+      .make-sm-column(6);
+      .make-sm-column-push(3);
+      padding: 1rem;
+    }
   }
 
-  .section-title{
-    color: @brand-primary;
-    font-weight: 300;
+  .project-screenshots{
+    .make-row;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
-}
 
-.project-screenshots{
-  .make-row;
-  padding: 1rem;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.project-details{
-  .make-row;
-  .launch, .last-pushed, .issues{
-    .make-sm-column(4);
-    text-align: center;
+  .project-details{
+    .make-row;
+    .launch, .last-pushed, .issues{
+      .make-sm-column(4);
+      text-align: center;
+    }
   }
-}
 
-.project-description{
-  .make-row;
-  p{
+  .project-contributions{
     .make-sm-column(6);
-    .make-sm-column-push(3);
-  }
-}
 
-.project-contributions{
-  .make-sm-column(6);
-
-  .project-contributors, .project-needs{
-    .make-sm-column(12);
+    .contributors, .project-needs{
+      .make-sm-column(12);
+      ul{
+        list-style: none;
+      }
+    }
+    .member{
+      margin: 0.5rem;
+    }
+    .skill{
+      display: inline;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: @gray1;
+      color: #ffffff;
+    }
   }
-}
-.project-data{
-  .make-sm-column(6);
+
+  .project-data{
+    .make-sm-column(6);
+  }
+
+  .languages{
+    .language{
+      display: inline;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: @gray2;
+      color: #ffffff;
+
+    }
+  }
+
 }
