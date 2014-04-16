@@ -1,10 +1,60 @@
-{{#link-to 'projects'}}&laquo; back to all projects{{/link-to}}
-<h2>{{name}}</h2>
-<p>{{description}}</p>
+<div class="project-container">
+  {{#link-to 'projects'}}&laquo; back to all projects{{/link-to}}
 
-    skills: {{join skillsNeeded delimiter=', '}}
-    <ul>
-    {{#each projectMembers}}
-      <li><img {{bind-attr src=member.gravatar}}> {{#link-to 'members.show' member}}{{member.name}}{{/link-to}}: {{role}}</li>
-    {{/each}}
-    </ul>
+  <h2 class="project-name">{{name}}</h2>
+
+  <div class="project-details">
+    <div class="launch"></div>
+    <div class="last-pushed"> last pushed: {{githubDetails.pushed_at}}</div>
+    <div class="issues">{{githubDetails.open_issues_count}} open issues</div>
+  </div>
+
+  <div class="project-screenshots">
+  {{#each screenshots}}
+    <img src="/{{this}}" alt="screenshot">
+  {{/each}}
+  </div>
+
+  <div class="project-description"><p>{{description}}</p></div>
+
+  <div class="project-contributions">
+
+    <div class="contributors">
+      <h3 class="section-title">Contributors</h3>
+      <ul>
+      {{#each projectMembers}}
+        <li class="member"><img {{bind-attr src=member.gravatar}} alt="{{member.name}}"> <a href="{{member.github_profile}}" class="name">{{member.name}}</a></li>
+      {{/each}}
+      </ul>
+    </div>
+
+    <div class="project-needs">
+      <h3 class="section-title">Skills Needed</h3>
+        <ul>
+        {{#each skillsNeeded}}
+          <li class="skill"> {{this}} </li>
+        {{/each}}
+        </ul>
+    </div>
+  </div>
+
+  <div class="project-data">
+    <div class="categories">
+      <h3 class="section-title">Categories</h3>
+    </div>
+    <div class="languages">
+      <h3 class="section-title">Languages</h3>
+      <p>{{githubDetails.language}}</p>
+    </div>
+    <div class="press">
+      <h3 class="section-title">Press Coverage</h3>
+       <ul>
+        {{#each pressClippings}}
+          <li class="press-item">
+            <p class="title">{{this}}</p>
+          </li>
+        {{/each}}
+        </ul>
+    </div>
+  </div>
+</div>
