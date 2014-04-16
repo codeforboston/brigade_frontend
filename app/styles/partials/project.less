@@ -1,0 +1,45 @@
+.project-container{
+  .make-row;
+
+  .project-name{
+    text-align: center;
+  }
+
+  .section-title{
+    color: @brand-primary;
+    font-weight: 300;
+  }
+}
+
+.project-screenshots{
+  .make-row;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.project-details{
+  .make-row;
+  .launch, .last-pushed, .issues{
+    .make-sm-column(4);
+    text-align: center;
+  }
+}
+
+.project-description{
+  .make-row;
+  p{
+    .make-sm-column(6);
+    .make-sm-column-push(3);
+  }
+}
+
+.project-contributions{
+  .make-sm-column(6);
+
+  .project-contributors, .project-needs{
+    .make-sm-column(12);
+  }
+}
+.project-data{
+  .make-sm-column(6);
+}
