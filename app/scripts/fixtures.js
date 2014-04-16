@@ -107,7 +107,42 @@ var projects = [
     "skillsNeeded": ["node.js"],
     "screenshots": [],
     "pressClippings": ["http://www.metro.us/boston/news/local/2013/06/11/code-for-boston-to-revive-mbta-alerts-twitter-account/"],
-    "featured": false
+    "featured": false,
+    "githubDetails": {
+      "id": 10541926,
+      "name": "mbta-alerts",
+      "full_name": "codeforboston/mbta-alerts",
+      "owner":  {
+        "login": "codeforboston",
+        "id": 2533182,
+        "gravatar_id": "813975f07f37957ba1c45c726270b5dd",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "private": false,
+      "description": "source code for @mbta_alerts bot",
+      "fork": false,
+      "created_at": "2013-06-07T03:43:17Z",
+      "updated_at": "2013-12-19T16:41:09Z",
+      "pushed_at": "2013-12-19T14:33:47Z",
+      "homepage": "https://twitter.com/mbta_alerts",
+      "size": 244,
+      "stargazers_count": 10,
+      "watchers_count": 10,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "forks_count": 3,
+      "mirror_url": null,
+      "open_issues_count": 2,
+      "forks": 3,
+      "open_issues": 2,
+      "watchers": 10,
+      "default_branch": "master",
+      "network_count": 3,
+      "subscribers_count": 9
+    }
   },
   {
     "id": 3,
