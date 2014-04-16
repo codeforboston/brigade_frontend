@@ -19,8 +19,8 @@
                 {{/each}}
               </ul>
               {{! TODO trying to figure out the best method for simple click handlers, this seems a little weird }}
-              {{!-- <h1>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h1> --}}
-              <h1>{{#view App.ShowCardView}}{{name}}{{/view}}</h1>
+              <h1>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h1>
+              {{!-- <h1>{{#view App.ShowCardView}}{{name}}{{/view}}</h1> --}}
               {{!-- {{#view App.ShowCard2View}}<a href {{action 'toggleCard'}}>{{name}}</a>{{/view}} --}}
 
               <p>{{description}}</p>
