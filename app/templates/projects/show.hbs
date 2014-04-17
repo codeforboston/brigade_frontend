@@ -4,14 +4,14 @@
   <h2 class="project-name">{{name}}</h2>
 
   <div class="project-details">
-    <div class="launch"></div>
-    <div class="last-pushed"> last pushed: {{githubDetails.pushed_at}}</div>
-    <div class="issues">{{githubDetails.open_issues_count}} open issues</div>
+    <div class="launch"><a href="{{url}}"><i class="fa fa-heart-o"></i> visit the site</a></div>
+    <div class="last-pushed"><i class="octicon octicon-history"></i> last pushed: {{githubDetails.pushed_at}}</div>
+    <div class="issues"><i class="fa fa-exclamation-circle"></i> {{githubDetails.open_issues_count}} open issues</div>
   </div>
 
   <div class="project-screenshots">
   {{#each screenshots}}
-    <img src="/{{this}}" alt="screenshot">
+    <img class="screenshot" {{bind-attr src=this}} alt="screenshot">
   {{/each}}
   </div>
 
@@ -51,10 +51,16 @@
        <ul>
         {{#each pressClippings}}
           <li class="press-item">
-            <p class="title">{{this}}</p>
+            <a class="title" href="{{title}}">{{this}}</a>
           </li>
         {{/each}}
         </ul>
     </div>
+  </div>
+
+  <div class="project-links">
+    <a class="project-ext-link" href="{{repository}}">View project on Github</a>
+    <a class="project-ext-link" href="">Discuss on Hackpad</a>
+    <a class="project-ext-link" href="">Share on Twitter</a>
   </div>
 </div>

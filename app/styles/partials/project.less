@@ -11,13 +11,15 @@
 // layout
 .project-container{
   .make-row;
-
+  padding-top: 4rem;
   .project-description{
     .make-row;
+    border-bottom: 1px solid #ccc;
     p{
       .make-sm-column(6);
       .make-sm-column-push(3);
-      padding: 1rem;
+      padding: 2rem;
+      margin-bottom: 0;
     }
   }
 
@@ -26,6 +28,10 @@
     padding: 1rem;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+
+    .screenshot{
+      .make-sm-column(4);
+    }
   }
 
   .project-details{
@@ -71,5 +77,14 @@
 
     }
   }
+
+.project-links{
+  .make-sm-column(12);
+  padding: 4rem;
+  .project-ext-link{
+    .make-sm-column(4);
+    text-align: center;
+  }
+}
 
 }
