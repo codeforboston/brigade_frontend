@@ -2,6 +2,7 @@
   "name": "brigade-frontend",
   "version": "0.0.0",
   "dependencies": {
+    "jquery": "~2.0.0",
     "ember": "~1.0.0",
     "ember-data-shim": "~1.0.0",
     "momentjs": "~2.2.1",

@@ -1,12 +1,49 @@
-@import 'bootstrap/less/bootstrap';
 @import 'font-awesome/less/font-awesome';
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Crete+Round);
 
 @import "bootstrap3";
 @import "octokit";
 @import "variables";
 
+
+.masthead {
+  background: url(/images/cfb_headline.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  text-shadow: @gray 0 2px;
+  height: 250px;
+  header {
+    padding-top: 100px;
+    font-size: 36px;
+    h1 {
+      font-size: 90px;
+      margin-top: 0;
+    }
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  border-top: 5px solid @cfa-red;
+}
+
+section {
+  padding: 30px 0;
+  font-size: 1.5em;
+}
+
+.offset-blue {
+  background-color: @blue-light;
+  color: white;
+}
+
+.cta-link {
+  font-weight: bold;
+}
 
 
 .card-outer {
