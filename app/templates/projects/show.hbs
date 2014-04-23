@@ -4,9 +4,15 @@
   <h2 class="project-name">{{name}}</h2>
 
   <div class="project-details">
-    <div class="launch"><a href="{{url}}"><i class="fa fa-heart-o"></i> visit the site</a></div>
-    <div class="last-pushed"><i class="octicon octicon-history"></i> last pushed: {{githubDetails.pushed_at}}</div>
-    <div class="issues"><i class="fa fa-exclamation-circle"></i> {{githubDetails.open_issues_count}} open issues</div>
+    <h4 class="launch">
+      <a {{bind-attr href=url}}><i class="fa fa-heart-o"></i> visit the site</a>
+    </h4>
+    <h4 class="last-pushed">
+      <i class="octicon octicon-history"></i> last pushed: {{githubDetails.pushed_at}}
+    </h4>
+    <h4 class="issues">
+      <i class="fa fa-exclamation-circle"></i> {{githubDetails.open_issues_count}} open issues
+    </h4>
   </div>
 
   <div class="project-screenshots">
@@ -23,7 +29,9 @@
       <h3 class="section-title">Contributors</h3>
       <ul>
       {{#each projectMembers}}
-        <li class="member"><img {{bind-attr src=member.gravatar}} alt="{{member.name}}"> <a href="{{member.github_profile}}" class="name">{{member.name}}</a></li>
+        <li class="member">
+          <img {{bind-attr src=member.gravatar}} {{bind-attr alt=member.name}}>
+        </li>
       {{/each}}
       </ul>
     </div>
@@ -59,8 +67,8 @@
   </div>
 
   <div class="project-links">
-    <a class="project-ext-link" href="{{repository}}">View project on Github</a>
-    <a class="project-ext-link" href="">Discuss on Hackpad</a>
-    <a class="project-ext-link" href="">Share on Twitter</a>
+    <a class="project-ext-link btn btn-default" {{bind-attr href=repository}}>View project on Github</a>
+    <a class="project-ext-link btn btn-default" href="">Discuss on Hackpad</a>
+    <a class="project-ext-link btn btn-default" href="">Share on Twitter</a>
   </div>
 </div>
