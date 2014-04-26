@@ -4,6 +4,8 @@
 @fa-font-path: "/styles/fonts";
 @icon-font-path: "/styles/fonts/";
 
+@import 'variables';
+
 
 // Colors
 @cfa-red: #ce1a40;
@@ -78,4 +80,12 @@ body {
   img {
     height: 50px;
   }
+}
+
+
+
+.btn-join {
+  .button-variant(white; @blue-light; darken(@blue-light, 5%));
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large * 2; @line-height-large * 1.25; @border-radius-small);
+  .box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
 }

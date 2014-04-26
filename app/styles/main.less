@@ -4,9 +4,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Crete+Round);
 
+@import "variables";
 @import "bootstrap3";
 @import "octokit";
-@import "variables";
 @import "partials/project";
 
 
@@ -27,6 +27,66 @@
   }
 }
 
+
+.homepage-box {
+  border-radius: @border-radius-base;
+  font-size: 1.25em;
+  padding: 10px;
+  text-align: center;
+  .box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
+
+  &.box-medium {
+    min-height: 140px;
+  }
+  &.box-icon {
+    .clearfix;
+    padding: 24px;
+    text-align: left;
+    .ib-header-small { font-size: 30px; }
+    .ib-header-large { font-size: 48px; }
+  }
+  &.box-large {
+    min-height: 190px;
+  }
+  &.box-orange {
+    background-color: #E87D2B;
+    color: white;
+  }
+  &.box-purple {
+    background-color: #68569B;
+    color: white;
+  }
+  &.box-blue {
+    background-color: @brand-primary;
+    color: white;
+  }
+  &.box-lightblue {
+    background-color: #4197BA;
+    color: white;
+  }
+  &.box-screenshot, &.box-video {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.box-video {
+    .opacity(0.75);
+    color: rgba(60, 60, 60, 0.85);
+    padding-top: 40px;
+  }
+}
+
+.box-caption {
+  font-size: 0.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-footer-link {
+  text-align: center;
+}
+
+
 footer {
   background-color: #f2f2f2;
   border-top: 5px solid @cfa-red;
@@ -35,12 +95,20 @@ footer {
 section {
   padding: 30px 0;
   font-size: 1.5em;
+  h2 {
+    color: #6C6d70;
+  }
+  h3 {
+    color: @cfa-red;
+    text-align: center;
+  }
+  &.offset-blue {
+    h2 { color: white; }
+    background-color: @blue-light;
+    color: white;
+  }
 }
 
-.offset-blue {
-  background-color: @blue-light;
-  color: white;
-}
 
 .cta-link {
   font-weight: bold;
