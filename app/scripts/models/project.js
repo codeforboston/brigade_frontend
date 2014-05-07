@@ -13,18 +13,14 @@ App.Project = DS.Model.extend({
   featured: DS.attr(),
   githubDetails: DS.attr(),
   commitCount: function () {
-    var details = this.getWithDefault('githubDetails', {});
-    var participation = details.participation;
-    var sum = 0;
-    if (participation == null) {
-      return sum
-    }
-    else {
-      for (i=0;i<participation.length;i++)
-        {sum = sum + participation[i]
-      };
-    }; 
-    return sum
+    var participation = this.getWithDefault('githubDetails', {}).participation;
+    var count = 0;
+    if (participation) {
+      for (var i = 0; i < participation.length; i++) {
+        count += participation[i];
+      }
+    } 
+    return count;
 }.property('githubDetails'),
   background: function() {
     if (this.getWithDefault('screenshots', []).length) {
