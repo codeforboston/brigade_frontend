@@ -29,10 +29,13 @@
                 <div class="github-details">
                   <div class="row">
                     <div class="col-md-6">
-                      <i class="octicon octicon-history"></i> 29 commits &bull; 4 days ago
+                      <i class="octicon octicon-history"></i> {{commitCount}} commits &bull; 4 days ago
                     </div>
                     <div class="col-md-6">
-                      <i class="octicon octicon-organization"></i> 5 contributors
+                      <i class="octicon octicon-organization"></i>{{githubDetails.contributors.length}} contributors
+                    </div>
+                    <div class="col-md-6">
+                      <i class="octicon octicon-organization"></i> {{githubDetails.open_issues_count}} open issues
                     </div>
                   </div>
                   <div class="divider"></div>
