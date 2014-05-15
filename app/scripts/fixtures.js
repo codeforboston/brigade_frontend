@@ -48,7 +48,7 @@ var projects = [
     "description": "Combining city data with a list of specific needs from food pantries will allow citizens to most effectively make useful and needed donations assisted by the Pantry Pick-Up App.",
     "repository": "https://github.com/codeforboston/pantry_pickup",
     "history": "https://github.com/codeforboston/pantry_pickup/contributors",
-    "projectPlan": "javascript:alert('I know it\\'s here somewhere, but just hit OK for now.');",
+    "projectPlan": "I know it's here somewhere, but just hit OK for now.",
     "url": "http://www.pantrypickup.org",
     "status": "In Development",
     "projectMembers": [1, 2, 3, 4],

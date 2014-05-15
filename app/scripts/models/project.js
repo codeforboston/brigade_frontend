@@ -24,7 +24,7 @@ App.Project = DS.Model.extend({
   }.property('githubDetails'),
   background: function() {
     if (this.getWithDefault('screenshots', []).length) {
-      return 'background-image: url(' + this.get('screenshots')[0] + ')'
+      return 'background-image: url(' + this.get('screenshots')[0] + ')';
     }
   }.property('screenshots')
 });
