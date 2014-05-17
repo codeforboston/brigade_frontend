@@ -1,17 +1,19 @@
-@import 'font-awesome/less/font-awesome';
+$fa-font-path: "../styles/fonts";
+$icon-font-path: "../styles/fonts/";
+
+@import "font-awesome/scss/font-awesome";
 
 @import "variables";
 @import "bootstrap3";
 @import "octokit";
-@import "partials/project";
-
+@import "project";
 
 .masthead {
   background: url(/images/headline.jpg) no-repeat center center;
   background-size: cover;
   color: white;
   position: relative;
-  text-shadow: @gray 0 2px;
+  text-shadow: $gray 0 2px;
   height: 250px;
   header {
     padding-top: 90px;
@@ -29,18 +31,18 @@
 
 
 .homepage-box {
-  border-radius: @border-radius-base;
+  border-radius: $border-radius-base;
   font-size: 1.25em;
   margin-bottom: 0.65em;
   padding: 10px;
   text-align: center;
-  .box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
+  @include box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
 
   &.box-medium {
     min-height: 140px;
   }
   &.box-icon {
-    .clearfix;
+    @extend .clearfix;
     padding: 24px;
     text-align: left;
     .ib-header-small { font-size: 30px; }
@@ -58,7 +60,7 @@
     color: white;
   }
   &.box-blue {
-    background-color: @brand-primary;
+    background-color: $brand-primary;
     color: white;
   }
   &.box-lightblue {
@@ -71,7 +73,7 @@
     background-position: center;
   }
   &.box-video {
-    .opacity(0.75);
+    @include opacity(0.75);
     color: rgba(60, 60, 60, 0.85);
     padding-top: 40px;
   }
@@ -90,7 +92,7 @@
 
 footer {
   background-color: #f2f2f2;
-  border-top: 5px solid @cfa-red;
+  border-top: 5px solid $cfa-red;
 }
 
 section {
@@ -106,7 +108,7 @@ section {
   }
   &.offset-blue {
     h2 { color: white; }
-    background-color: @blue-light;
+    background-color: $blue-light;
     color: white;
   }
 }
@@ -118,19 +120,19 @@ section {
 
 
 .card-outer {
-  .make-sm-column(6);
-  .make-md-column(4);
-  .make-lg-column(3);
-  margin-bottom: @grid-gutter-width;
+  @include make-sm-column(6);
+  @include make-md-column(4);
+  @include make-lg-column(3);
+  margin-bottom: $grid-gutter-width;
   .card-inner {
     background-color: white;
-    .box-shadow(0 1px 3px rgba(0, 0, 0, .2));
-    border-radius: @border-radius-small;
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, .2));
+    border-radius: $border-radius-small;
     overflow: hidden;
     header {
       position: relative;
       height: 150px;
-      border-bottom: 4px solid @gray-light;
+      border-bottom: 4px solid $gray-light;
       // hide bg behind rest of header
       .bg {
         position: absolute;
@@ -139,7 +141,7 @@ section {
         &.bg-image {
           background-size: cover;
           &:before {
-            .opacity(0.25);
+            @include opacity(0.25);
             content: '';
             display: block;
             position: relative;
@@ -151,7 +153,7 @@ section {
           }
         }
         &.bg-none {
-          background-color: @brand-primary;
+          background-color: $brand-primary;
           color: white;
           font-size: 15em;
           line-height: 0;
@@ -166,7 +168,7 @@ section {
       }
     }
     .project-skills {
-      .list-inline;
+      @extend .list-inline;
       // can't use :first-child, as Ember will add extra metamorph elements
       li:not(:first-of-type):before {
         content: '\2022'; // &bull;
@@ -176,20 +178,20 @@ section {
     .github-details {
       margin-top: 10px;
       a {
-        .text-muted;
+        @extend .text-muted;
       }
       .divider {
-        .nav-divider();
+        @include nav-divider();
       }
     }
     .inset {
-      padding: 0 @padding-small-horizontal;
+      padding: 0 $padding-small-horizontal;
     }
     footer {
-      background-color: @brand-secondary;
+      background-color: $brand-secondary;
       color: white;
       font-weight: bold;
-      padding: @padding-base-vertical @padding-small-horizontal;
+      padding: $padding-base-vertical $padding-small-horizontal;
       a { color: white; }
     }
     .card-back {

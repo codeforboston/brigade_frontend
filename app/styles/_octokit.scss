@@ -1,0 +1,28 @@
+$octicon-font-path: "../styles/fonts";
+$octicon-css-prefix: octicon;
+
+$octicon-var-history: "\f07e";        // commits
+$octicon-var-organization: "\f019";   // contributors
+
+// project plan icon : fa fa-file-o
+
+@font-face {
+  font-family: 'Octicons';
+  src: url('#{$octicon-font-path}/octicons-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.#{$octicon-css-prefix} {
+  display: inline-block;
+  font-family: Octicons;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.#{$octicon-css-prefix}-history:before { content: $octicon-var-history; }
+.#{$octicon-css-prefix}-organization:before { content: $octicon-var-organization; }

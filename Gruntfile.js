@@ -1,6 +1,6 @@
-// Generated on 2013-10-06 using generator-ember 0.6.2
+// Generated on 2014-05-16 using generator-ember 0.8.3
 'use strict';
-var LIVERELOAD_PORT = 35728;
+var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
     return connect.static(require('path').resolve(dir));
@@ -17,7 +17,6 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
-    grunt.loadNpmTasks('grunt-env');
 
     // configurable paths
     var yeomanConfig = {
@@ -29,22 +28,14 @@ module.exports = function (grunt) {
     grunt.initConfig({
         yeoman: yeomanConfig,
         bowerrc: grunt.file.readJSON('.bowerrc'),
-        env: {
-            dev: { env: 'dev' },
-            prod: { env: 'prod' }
-        },
         watch: {
             emberTemplates: {
                 files: '<%= yeoman.app %>/templates/**/*.hbs',
                 tasks: ['emberTemplates']
             },
-            coffeeTest: {
-                files: ['test/spec/{,*/}*.coffee'],
-                tasks: ['coffee:test']
-            },
-            less: {
-                files: '<%= yeoman.app %>/styles/{,*/}*.less',
-                tasks: ['less']
+            compass: {
+                files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+                tasks: ['compass:server']
             },
             neuter: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
@@ -83,8 +74,8 @@ module.exports = function (grunt) {
                 options: {
                     middleware: function (connect) {
                         return [
-                            mountFolder(connect, '.tmp'),
-                            mountFolder(connect, 'test')
+                            mountFolder(connect, 'test'),
+                            mountFolder(connect, '.tmp')
                         ];
                     }
                 }
@@ -119,7 +110,8 @@ module.exports = function (grunt) {
         },
         jshint: {
             options: {
-                jshintrc: '.jshintrc'
+                jshintrc: '.jshintrc',
+                reporter: require('jshint-stylish')
             },
             all: [
                 'Gruntfile.js',
@@ -136,51 +128,25 @@ module.exports = function (grunt) {
                 }
             }
         },
-        coffee: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= yeoman.app %>/scripts',
-                    src: '{,*/}*.coffee',
-                    dest: '.tmp/scripts',
-                    ext: '.js'
-                }]
+        compass: {
+            options: {
+                sassDir: '<%= yeoman.app %>/styles',
+                cssDir: '.tmp/styles',
+                generatedImagesDir: '.tmp/images/generated',
+                imagesDir: '<%= yeoman.app %>/images',
+                javascriptsDir: '<%= yeoman.app %>/scripts',
+                fontsDir: '<%= yeoman.app %>/styles/fonts',
+                importPath: '<%= bowerrc.directory %>',
+                httpImagesPath: '/images',
+                httpGeneratedImagesPath: '/images/generated',
+                httpFontsPath: '/styles/fonts',
+                relativeAssets: false
             },
-            test: {
-                files: [{
-                    expand: true,
-                    cwd: 'test/spec',
-                    src: '{,*/}*.coffee',
-                    dest: '.tmp/spec',
-                    ext: '.js'
-                }]
-            }
-        },
-        less: {
-            dev: {
+            dist: {},
+            server: {
                 options: {
-                    paths: ['<%= bowerrc.directory %>'],
-                    dumpLineNumbers: 'comments'
-                },
-                files: [{
-                    expand: true,
-                    cwd:    '<%= yeoman.app %>/styles/',
-                    src:    ['*.less'],
-                    dest:   '.tmp/styles',
-                    ext:    '.css'
-                }]
-            },
-            dist: {
-                options: {
-                    paths: ['<%= bowerrc.directory %>']
-                },
-                files: [{
-                    expand: true,
-                    cwd:    '<%= yeoman.app %>/styles/',
-                    src:    ['*.less'],
-                    dest:   '.tmp/styles',
-                    ext:    '.css'
-                }]
+                    debugInfo: true
+                }
             }
         },
         // not used since Uglify task does concat,
@@ -204,12 +170,6 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/styles/fonts/*'
                     ]
                 }
-            }
-        },
-        preprocess: {
-            index: {
-                src: '<%= yeoman.app %>/index.html',
-                dest: '<%= yeoman.build %>/index.html'
             }
         },
         useminPrepare: {
@@ -249,7 +209,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= yeoman.dist %>/styles/main.css': [
-                        '.tmp/styles/{,*/}*.css',
+                        '<%= yeoman.build %>/styles/{,*/}*.css',
                         '<%= yeoman.app %>/styles/{,*/}*.css'
                     ]
                 }
@@ -276,36 +236,49 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        replace: {
+          app: {
+            options: {
+              variables: {
+                ember: 'bower_components/ember/ember.js',
+                ember_data: 'bower_components/ember-data/ember-data.js'
+              }
+            },
+            files: [
+              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'}
+            ]
+          },
+          dist: {
+            options: {
+              variables: {
+                ember: 'bower_components/ember/ember.prod.js',
+                ember_data: 'bower_components/ember-data/ember-data.prod.js'
+              }
+            },
+            files: [
+              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'}
+            ]
+          }
+        },
         // Put files not handled in other tasks here
         copy: {
-            main: {
+            fonts: {
                 files: [
                     {
                         expand: true,
-                        cwd: '<%= bowerrc.directory %>',
-                        dest: '<%= yeoman.build %>/styles/fonts',
                         flatten: true,
-                        src: '{bootstrap,font-awesome}/fonts/*'
-                    },
-                    {
-                        expand: true,
-                        cwd: '<%= yeoman.app %>',
-                        dest: '<%= yeoman.build %>',
+                        filter: 'isFile',
+                        cwd: '<%= bowerrc.directory %>',
+                        dest: '<%= yeoman.app %>/styles/fonts/',
                         src: [
-                            'styles/fonts/*'
+                            'bootstrap-sass/dist/fonts/**', // Bootstrap
+                            'font-awesome/fonts/**' // Font-Awesome
                         ]
                     }
                 ]
-        },
+            },
             dist: {
                 files: [
-                    {
-                        expand: true,
-                        cwd: '<%= bowerrc.directory %>',
-                        dest: '<%= yeoman.dist %>/styles/fonts',
-                        flatten: true,
-                        src: '{bootstrap,font-awesome}/fonts/*'
-                    },
                     {
                         expand: true,
                         dot: true,
@@ -324,28 +297,19 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'emberTemplates',
-                'coffee:dist',
-                'less:dev',
-                'preprocess:index'
+                'compass:server'
             ],
             test: [
                 'emberTemplates',
-                'coffee',
-                'less:dev'
+                'compass'
             ],
             dist: [
                 'emberTemplates',
-                'coffee',
-                'less:dist',
+                'compass:dist',
                 'imagemin',
                 'svgmin',
                 'htmlmin'
             ]
-        },
-        karma: {
-            unit: {
-                configFile: 'karma.conf.js'
-            }
         },
         emberTemplates: {
             options: {
@@ -364,7 +328,7 @@ module.exports = function (grunt) {
             app: {
                 options: {
                     filepathTransform: function (filepath) {
-                        return 'app/' + filepath;
+                        return yeomanConfig.app + '/' + filepath;
                     }
                 },
                 src: '<%= yeoman.app %>/scripts/app.js',
@@ -374,16 +338,21 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('server', function (target) {
+        grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
+        grunt.task.run(['serve:' + target]);
+    });
+
+    grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
         }
 
         grunt.task.run([
-            'env:dev',
             'clean:server',
+            'replace:app',
             'concurrent:server',
-            'copy',
             'neuter:app',
+            'copy:fonts',
             'connect:livereload',
             'open',
             'watch'
@@ -391,8 +360,8 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('test', [
-        'env:dev',
         'clean:server',
+        'replace:app',
         'concurrent:test',
         'connect:test',
         'neuter:app',
@@ -400,9 +369,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'env:prod',
         'clean:dist',
-        'preprocess:index',
+        'replace:dist',
         'useminPrepare',
         'concurrent:dist',
         'neuter:app',

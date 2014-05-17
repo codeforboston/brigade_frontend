@@ -1,0 +1,97 @@
+
+// typography
+.project-name {
+  text-align: center;
+}
+.section-title {
+  color: $brand-primary;
+  font-weight: 300;
+}
+
+// layout
+.project-container {
+  @include make-row;
+  padding-top: 4rem;
+  .project-description {
+    @include make-row;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ccc;
+    p {
+      @include make-sm-column(6);
+      @include make-sm-column-push(3);
+      padding: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .project-screenshots {
+    @include make-row;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    .screenshot {
+      @include make-sm-column(4);
+    }
+  }
+
+  .project-details {
+    @include make-row;
+    .launch, .last-pushed, .issues {
+      @include make-sm-column(4);
+      padding: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  .project-contributions {
+    @include make-sm-column(6);
+
+    .contributors, .project-needs {
+      @include make-sm-column(12);
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          margin: 0.5rem;
+        }
+      }
+    }
+    .member {
+      margin: 0.5rem;
+    }
+    .skill {
+      display: inline;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: $gray1;
+      color: #ffffff;
+    }
+  }
+
+  .project-data {
+    @include make-sm-column(6);
+  }
+
+  .languages {
+    .language {
+      display: inline;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: $gray2;
+      color: #ffffff;
+
+    }
+  }
+
+  .project-links {
+    @include make-sm-column(12);
+    padding: 4rem;
+    .project-ext-link {
+      @include make-sm-column(4);
+      text-align: center;
+    }
+  }
+
+}
