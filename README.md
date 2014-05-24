@@ -1,15 +1,30 @@
 Brigade Front-End
 =================
 
-This is the first stab at a front-end for the [Code for Boston](http://www.meetup.com/Code-for-Boston/) Brigade website, running on [Ember.js](http://emberjs.com) and served by [Grunt](http://gruntjs.com). More to come soon.
+This is the front-end for the [Code for Boston](http://www.codeforboston.org/) Brigade website, running on [Ember.js](http://emberjs.com), [Bootstrap](http://getbootstrap.com/) and [Compass](http://compass-style.org/)/[Sass](http://sass-lang.com/).
 
-running the server
-------------------
 
-    npm install -g yo   # installs grunt and bower automatically
-    
-    #clone git repository and cd into it
-    
-    npm install         # installs local node dependencies
-    bower install       # installs local client-side library dependencies
-    grunt server        # starts server
+Installation
+------------
+
+[brigade_frontend](https://github.com/codeforboston/brigade_frontend) is built using [Yeoman](http://yeoman.io/) and [generator-ember](https://github.com/yeoman/generator-ember). These tools allow for faster and easier development, testing, and deployment; developers must install these tools to work with the website. ([More information on why we use Yeoman](http://yeoman.io/whyyeoman.html).)
+
+Full installation instructions can be found within the [installation guide](https://github.com/codeforboston/brigade_frontend/wiki/Installation), though here are the quick steps:
+
+    npm install -g yo
+    gem install compass
+    cd brigade_frontend
+    npm install
+    bower install
+
+
+Development
+-----------
+
+Once you've [installed the dependencies](https://github.com/codeforboston/brigade_frontend/wiki/Installation), you can run the website locally via `grunt serve`.
+
+
+Code for America API
+--------------------
+
+We make use of the [Code for America API](https://github.com/codeforamerica/cfapi). This allows us to display information about projects, events, and (at some point in the future) members. For development purposes, however, we stub out the API using [Ember.js fixtures](http://emberjs.com/guides/models/the-fixture-adapter/).
