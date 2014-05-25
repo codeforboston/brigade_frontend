@@ -1,8 +1,10 @@
 App.Event = DS.Model.extend({
-  name: DS.attr(),
+  eventUrl: DS.attr(),
   description: DS.attr(),
   location: DS.attr(),
+  name: DS.attr(),
+  organizationName: DS.attr(),
   startTime: DS.attr('date'),
-  url: DS.attr(),
-  featured: DS.attr()
+  endTime: DS.attr('date'),
+  organization: DS.attr()
 });
