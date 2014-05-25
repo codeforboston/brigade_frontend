@@ -1,7 +1,29 @@
-Some kind of calendar view or something, maybe.
-{{#each}}
-  <div>
-    {{#link-to 'events.show' this}}{{name}}{{/link-to}}<br>
-    {{date startTime 'LLL'}}
+<div class="featured-event">
+  <div class="container">
+    <div class="col-sm-9">
+      <h1>{{this.firstObject.name}}</h1>
+      <p>{{date this.firstObject.startTime 'MMM DD hh:mm a'}}</p>
+    </div>
+    <div class="col-sm-12">
+      <a href="http://www.meetup.com/Code-for-Boston/" class="btn btn-success btn-lg col-sm-2 pull-right">RSVP</a>
+    </div>
   </div>
-{{/each}}
+</div>
+
+<section class="container">
+    <h2>Events</h2>
+  {{#each}}
+    <div class="event">
+      <div class="date">
+        <div class="day">{{date startTime 'MMM DD YY'}}</div>
+        <div class="time">{{date startTime 'hh:mm a'}}</div>
+      </div>
+      <div class="col-sm-9">
+        <h3 class="text-left"><a href="{{unbound eventUrl }}" target="_blank">{{name}}</a></h3>
+        <p>{{{description}}}</p>
+
+      </div>
+    </div>
+
+  {{/each}}
+</section>

@@ -1,0 +1,21 @@
+
+.featured-event{
+  background: $gray;
+  padding: 60px 0 60px 0;
+  color: white;
+}
+
+.event{
+  @include make_row;
+  .date{
+    @include make-sm-column(3);
+    padding: 20px;
+    .day{
+      font-size: 2em;
+      font-weight: 600;
+    }
+    .time{
+      font-size: 1.6em;
+    }
+  }
+}
