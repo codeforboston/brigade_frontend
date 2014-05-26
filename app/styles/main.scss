@@ -8,6 +8,15 @@ $icon-font-path: "../styles/fonts/";
 @import "octokit";
 @import "project";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $footer-height;
+}
+
 .masthead {
   background: url(/images/headline.jpg) no-repeat center center;
   background-size: cover;
@@ -93,28 +102,25 @@ $icon-font-path: "../styles/fonts/";
 footer {
   background-color: #e8e8e8;
   border-top: 5px solid $cfa-red;
-  padding: 20px 0;
   margin: 20px 0 0;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  height: $footer-height - 20px; // 20px for margin-top
+  width: 100%;
 
-  .donors{
-    width: 100%;
+  .donors {
     text-align: center;
-
-    &:before {
-      content: '';
-      height: 100%;
-      margin-right: -0.25em;
-      display: inline-block;
-      vertical-align: middle;
-    }
   }
 
   .donor {
-    width: 16%;
+    @extend .text-muted;
+    display: inline-block;
     margin: 0;
     padding: 1%;
-    display: inline-block;
+    text-align: left;
     vertical-align: middle;
+    width: percentage(1 / $donor-count) - 2; // -2 for padding-left/padding-right
 
     img {
       max-width: 80%;
