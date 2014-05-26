@@ -1,9 +1,9 @@
 App.Project = DS.Model.extend({
   name: DS.attr(),
   description: DS.attr(),
-  repository: DS.attr(),
+  codeUrl: DS.attr(),
   history: DS.attr(),
-  url: DS.attr(),
+  linkUrl: DS.attr(),
   projectMembers: DS.hasMany('project-member', {async: true}),
   status: DS.attr(),
   skillsNeeded: DS.attr(),
@@ -19,7 +19,7 @@ App.Project = DS.Model.extend({
       for (var i = 0; i < participation.length; i++) {
         count += participation[i];
       }
-    } 
+    }
     return count;
   }.property('githubDetails'),
   background: function() {

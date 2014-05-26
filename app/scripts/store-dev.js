@@ -1,3 +1,21 @@
+App.Adapter = DS.FixtureAdapter.extend({
+  queryFixtures: function(records, query, type) {
+    return records.filter(function(record) {
+      for (var key in query) {
+        if (record[key] !== query[key]) {
+          return false;
+        }
+      }
+      return true;
+    });
+  }
+});
+
+App.Store = DS.Store.extend({
+  adapter: App.Adapter
+});
+
+
 var members = [
   {
     "id": 1,
@@ -46,10 +64,10 @@ var projects = [
     "id": 1,
     "name": "Pantry Pickup",
     "description": "Combining city data with a list of specific needs from food pantries will allow citizens to most effectively make useful and needed donations assisted by the Pantry Pick-Up App.",
-    "repository": "https://github.com/codeforboston/pantry_pickup",
+    "codeUrl": "https://github.com/codeforboston/pantry_pickup",
     "history": "https://github.com/codeforboston/pantry_pickup/contributors",
     "projectPlan": "I know it's here somewhere, but just hit OK for now.",
-    "url": "http://www.pantrypickup.org",
+    "linkUrl": "http://www.pantrypickup.org",
     "status": "In Development",
     "projectMembers": [1, 2, 3, 4],
     "skillsNeeded": ["node.js", "python"],
@@ -211,9 +229,9 @@ var projects = [
     "id": 2,
     "name": "MBTA Alerts",
     "description": "The bot that tweets from the MBTA Alerts RSS feed. Saving 9K @mbta_alerts Twitter followers from information blackout!",
-    "repository": "https://github.com/codeforboston/mbta_alerts",
+    "codeUrl": "https://github.com/codeforboston/mbta_alerts",
     "history": "https://github.com/codeforboston/mbta-alerts/contributors",
-    "url": "http://www.twitter.com/mbta-alerts",
+    "linkUrl": "http://www.twitter.com/mbta-alerts",
     "status": "Deployed",
     "projectMembers": [5],
     "skillsNeeded": ["node.js"],
@@ -238,7 +256,7 @@ var projects = [
             "htmlUrl": "https://github.com/haileypate",
             "login": "haileypate",
             "owner": false,
-            "url": "https://api.github.com/users/haileypate"
+            "linkUrl": "https://api.github.com/users/haileypate"
           },
 	    {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
@@ -339,8 +357,8 @@ var projects = [
   {
     "id": 3,
     "name": "filter-template",
-    "url": "http://codeforboston.github.io/filter-template/",
-    "repository": "https://github.com/codeforboston/filter-template",
+    "linkUrl": "http://codeforboston.github.io/filter-template/",
+    "codeUrl": "https://github.com/codeforboston/filter-template",
     "description": "Generic \"find-a\" app for geographic datasets",
     "projectMembers": [],
     "skillsNeeded": [],
@@ -459,9 +477,9 @@ var projects = [
     "id": 4,
     "name": "Vote Cambridge",
     "description": "People of Cambridge, find your polling location.",
-    "repository": "https://github.com/codeforboston/cambridge_voting_locations",
+    "codeUrl": "https://github.com/codeforboston/cambridge_voting_locations",
     "updatedAt": "2014-01-19T20:01:12Z",
-    "url": "http://votecambridge.com/",
+    "linkUrl": "http://votecambridge.com/",
     "projectMembers": [],
     "skillsNeeded": [],
     "createdAt": "2014-01-19T20:01:12Z",

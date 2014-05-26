@@ -241,22 +241,26 @@ module.exports = function (grunt) {
             options: {
               variables: {
                 ember: 'bower_components/ember/ember.js',
-                ember_data: 'bower_components/ember-data/ember-data.js'
+                ember_data: 'bower_components/ember-data/ember-data.js',
+                env: 'dev'
               }
             },
             files: [
-              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'}
+              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'},
+              {src: '<%= yeoman.app %>/scripts/app.js', dest: '.tmp/scripts/app.js'}
             ]
           },
           dist: {
             options: {
               variables: {
                 ember: 'bower_components/ember/ember.prod.js',
-                ember_data: 'bower_components/ember-data/ember-data.prod.js'
+                ember_data: 'bower_components/ember-data/ember-data.prod.js',
+                env: 'prod'
               }
             },
             files: [
-              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'}
+              {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'},
+              {src: '<%= yeoman.app %>/scripts/app.js', dest: '.tmp/scripts/app.js'}
             ]
           }
         },
@@ -331,7 +335,7 @@ module.exports = function (grunt) {
                         return yeomanConfig.app + '/' + filepath;
                     }
                 },
-                src: '<%= yeoman.app %>/scripts/app.js',
+                src: '<%= yeoman.build %>/scripts/app.js',
                 dest: '.tmp/scripts/combined-scripts.js'
             }
         }

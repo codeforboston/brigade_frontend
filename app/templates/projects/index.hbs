@@ -8,8 +8,8 @@
               <div {{bind-attr style=background class=":bg background:bg-image:bg-none"}}>
                 {{#unless background}}<i class="fa fa-github"></i>{{/unless}}
               </div>
-              {{#if url}}
-                <div class="site-btn"><a {{bind-attr href=url}} target="_blank" class="btn btn-primary">go to live site <i class="fa fa-share"></i></a></div>
+              {{#if linkUrl}}
+                <div class="site-btn"><a {{bind-attr href=linkUrl}} target="_blank" class="btn btn-primary">go to live site <i class="fa fa-share"></i></a></div>
               {{/if}}
             </header>
             <div class="inset">
@@ -41,7 +41,7 @@
                   <div class="divider"></div>
                   <div class="row">
                     <div {{bind-attr class="projectPlan:col-md-6:col-md-12"}}>
-                      <a {{bind-attr href=repository}} target="_blank"><i class="fa fa-github"></i> View code on Github</a>
+                      <a {{bind-attr href=codeUrl}} target="_blank"><i class="fa fa-github"></i> View code on Github</a>
                     </div>
                     {{#if projectPlan}}
                     <div class="col-md-6">
