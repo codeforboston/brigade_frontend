@@ -200,9 +200,9 @@ var projects = [
       "private": false,
       "description": "Combining city data with a list of specific needs from food pantries will allow citizens to most effectively make useful and needed donations assisted by the Pantry Pick-Up App. ",
       "fork": false,
-      "createdAt": "2013-02-11T16:50:02Z",
-      "updatedAt": "2014-01-08T00:22:59Z",
-      "pushedAt": "2013-12-04T03:20:11Z",
+      "created_at": "2013-02-11T16:50:02Z",
+      "updated_at": "2014-01-08T00:22:59Z",
+      "pushed_at": "2013-12-04T03:20:11Z",
       "homepage": "http://www.pantrypickup.org",
       "size": 5735,
       "stargazers_count": 14,
@@ -332,9 +332,9 @@ var projects = [
       "private": false,
       "description": "source code for @mbta_alerts bot",
       "fork": false,
-      "createdAt": "2013-06-07T03:43:17Z",
-      "updatedAt": "2013-12-19T16:41:09Z",
-      "pushedAt": "2013-12-19T14:33:47Z",
+      "created_at": "2013-06-07T03:43:17Z",
+      "updated_at": "2013-12-19T16:41:09Z",
+      "pushed_at": "2013-12-19T14:33:47Z",
       "homepage": "https://twitter.com/mbta_alerts",
       "size": 244,
       "stargazers_count": 10,
@@ -448,9 +448,9 @@ var projects = [
       "private": false,
       "description": "Generic \"find-a\" app for geographic datasets",
       "fork": false,
-      "createdAt": "2013-10-09T00:18:42Z",
-      "updatedAt": "2013-12-31T18:29:34Z",
-      "pushedAt": "2013-11-13T19:31:28Z",
+      "created_at": "2013-10-09T00:18:42Z",
+      "updated_at": "2013-12-31T18:29:34Z",
+      "pushed_at": "2013-11-13T19:31:28Z",
       "homepage": "http://codeforboston.github.io/filter-template",
       "size": 328,
       "stargazers_count": 2,
@@ -561,9 +561,9 @@ var projects = [
       "private": false,
       "description": "People of Cambridge, find your polling location.",
       "fork": false,
-      "createdAt": "2013-08-14T02:00:19Z",
-      "updatedAt": "2013-11-25T18:09:25Z",
-      "pushedAt": "2013-11-05T00:11:19Z",
+      "created_at": "2013-08-14T02:00:19Z",
+      "updated_at": "2013-11-25T18:09:25Z",
+      "pushed_at": "2013-11-05T00:11:19Z",
       "homepage": "http://votecambridge.com",
       "size": 6272,
       "stargazers_count": 2,
@@ -590,7 +590,7 @@ var projects = [
 var events = [
   {
       "apiUrl": "http://codeforamerica.org/api/events/4256",
-      "created_at": "2014-03-18 09:38:35",
+      "createdAt": "2014-03-18 09:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyspbgb/",
@@ -621,7 +621,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/5128",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>For this week's civic hack night, we'll be trying out a new venue at Workbar in Cambridge. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for Workbar is Central. For those who drive, there are pay parking lots on\u00a0Franklin and Pearl Streets; Bishop Allen &amp; Essex Street; Bishop Allen &amp; Norfolk Street; and on Green Street. There is also metered street parking on Bishop Allen, Mass Ave, and other surrounding streets.</p> <p><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p>During the event, <a href=\"https://codeforboston.hackpad.com/27-May-2014-hacknights-mzLMUBIy3Dj\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/181530362/",
@@ -652,7 +652,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/5129",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p>During the event, <a href=\"https://codeforboston.hackpad.com/3-June-2014-hacknights-ZUIEAZWd59P\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/181530152/",
@@ -683,7 +683,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4235",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysjbnb/",
@@ -714,7 +714,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4236",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysjbwb/",
@@ -745,7 +745,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4237",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysjbgc/",
@@ -776,7 +776,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4238",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyskbcb/",
@@ -807,7 +807,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4239",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyskblb/",
@@ -838,7 +838,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4240",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyskbtb/",
@@ -869,7 +869,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4241",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyskbdc/",
@@ -900,7 +900,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4242",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyskbmc/",
@@ -931,7 +931,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4243",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyslbhb/",
@@ -962,7 +962,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4244",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyslbqb/",
@@ -993,7 +993,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4245",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyslbzb/",
@@ -1024,7 +1024,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4246",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjyslbjc/",
@@ -1055,7 +1055,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4247",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysmbdb/",
@@ -1086,7 +1086,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4248",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysmbmb/",
@@ -1117,7 +1117,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4249",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysmbvb/",
@@ -1148,7 +1148,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4250",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysmbfc/",
@@ -1179,7 +1179,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4251",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysmbnc/",
@@ -1210,7 +1210,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4252",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysnbkb/",
@@ -1241,7 +1241,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4253",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysnbsb/",
@@ -1272,7 +1272,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4254",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysnbcc/",
@@ -1303,7 +1303,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4255",
-      "created_at": "2014-03-18 10:38:35",
+      "createdAt": "2014-03-18 10:38:35",
       "description": "<p>Our weekly work session will be at the Cambridge Innovation Center in Kendall Square, on the FOURTH FLOOR, in the KATHMANDU room. These Hack Nights are our time to meet in person to work on and discuss civic tech projects. Come by to say hi and hack with us!</p> <p><b>Transportation</b><br/>The Red Line stop for CIC is Kendall. For those who drive, there is a pay parking lot underneath the building, and limited meter parking in the area. Additionally, <a href=\"http://goo.gl/maps/3WsJV\">the MIT Hayward St lot</a> is free after 5pm. <i>Please make sure to check in with security when you arrive.</i></p> <p><br/><b>Schedule</b><br/>7:00pm - Welcoming chitchat, pizza, featured project issue<br/>7:15pm - New member orientation<br/>7:30pm - Announcements<br/>7:35pm - Project reports<br/>7:45pm - Tech talk<br/>8:00pm - Hacking!</p> <p><br/>During the event, <a href=\"https://codeforboston.hackpad.com/18-March-2014-hacknights-dUaGQsaFujn\">join our Hackpad for announcement links and collaborative note taking</a>.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/qlglcjysnblc/",
@@ -1334,7 +1334,7 @@ var events = [
     },
     {
       "apiUrl": "http://codeforamerica.org/api/events/4257",
-      "created_at": "2014-03-20 20:07:33",
+      "createdAt": "2014-03-20 20:07:33",
       "description": "<p>Hello, CityCampers!</p> <p>Although it fills us with sadness, the Code for Boston Core Team has regretfully decided that this weekend's CityCamp event will have to be <b>postponed</b> until a later date. A few different factors came together to substantially affect attendance for the event, and it seems to make sense to move the event to a date when more community members can attend. We'll keep you posted about the new date right here on this page when it becomes available.</p> <p><br/>However, this doesn't mean we're standing still! We are laser-focused on our upcoming <a href=\"http://www.meetup.com/Code-for-Boston/events/169976402/\">Random Hacks of Kindness (RHoK) Boston for the National Day of Civic Hacking</a>. Over the next few weeks at Code for Boston Civic Hack Nights, we'll be inviting guests from the community to workshop problem sets to pursue during RHoK - sort of taking some of the CityCamp goodness and spreading it out over the next month.</p> <p><br/>Again, we apologize for the inconvenience for those who have already RSVPed - thank you so much for your interest and commitment. We're looking forward to seeing you all around hack nights and at RHoK!</p> <p><br/>- Harlan, Matt, Lyre, and the rest of the Code for Boston team</p> <p><br/>---</p> <p><br/>Boston's civic tech community is evolving rapidly, and is eager to help shape how we address urban challenges in Greater Boston. Code for Boston is bringing together the civic tech community with government, nonprofit, and other public service organizations to connect, explore, and learn from one another at CityCamp.</p> <p>During the event, we will generate rich discussion, align understandings of the local problems our organizations are trying to solve, and explore how the civic tech community can be a long-term partner in these efforts.</p> <p>At our next event, the National Day of Civic Hacking (May 30 - June 1), we will develop and implement solutions to the challenges we explore during CityCamp.</p> <p>We invite you to join us for this one-day unconference to collaborate on the challenges facing our city and nation. By building new bridges within our community, we will redefine what our organizations can do together.</p>",
       "endTime": null,
       "eventUrl": "http://www.meetup.com/Code-for-Boston/events/172477722/",
