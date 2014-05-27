@@ -22,7 +22,7 @@
         <div class="time">{{date startTime 'hh:mm a'}}</div>
       </div>
       <div class="col-sm-9">
-        <h3 class="text-left"><a href="{{unbound eventUrl }}" target="_blank">{{name}}</a></h3>
+        <h3 class="text-left"><a {{bind-attr href=eventUrl }} target="_blank">{{name}}</a></h3>
         <p>{{{description}}}</p>
 
       </div>
