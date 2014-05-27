@@ -18,8 +18,15 @@
     <script src="bower_components/momentjs/min/moment.min.js"></script>
     <script src="bower_components/handlebars/handlebars.runtime.js"></script>
     <script src="bower_components/ember/ember.js"></script>
-    <script src="bower_components/ember-data-shim/ember-data.js"></script>
+    <script src="bower_components/ember-data/ember-data.js"></script>
+    <script src="bower_components/ember-mocha-adapter/adapter.js"></script>
     <script src="scripts/compiled-templates.js"></script>
+    <script src="scripts/combined-scripts.js"></script>
+
+    <script>
+        App.setupForTesting();
+        App.injectTestHelpers();
+    </script>
 
     <!-- include spec files here... -->
     <script src="spec/test.js"></script>
