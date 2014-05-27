@@ -24,13 +24,17 @@
     <script src="scripts/combined-scripts.js"></script>
 
     <script>
+        App.rootElement = '#brigade';
         App.setupForTesting();
         App.injectTestHelpers();
     </script>
 
     <!-- include spec files here... -->
     <script src="spec/models/project.js"></script>
+    <script src="spec/integration/navigation.js"></script>
 
     <script>mocha.run()</script>
+
+    <div id="brigade"></div>
 </body>
 </html>
