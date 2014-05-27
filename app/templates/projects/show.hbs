@@ -5,7 +5,9 @@
 
   <div class="project-details">
     <h4 class="launch">
-      <a {{bind-attr href=url}}><i class="fa fa-heart-o"></i> visit the site</a>
+      {{#if linkUrl}}
+        <a {{bind-attr href=linkUrl}}><i class="fa fa-heart-o"></i> visit the site</a>
+      {{/if}}
     </h4>
     <h4 class="last-pushed">
       <i class="octicon octicon-history"></i> last pushed: {{githubDetails.pushed_at}}
@@ -67,7 +69,7 @@
   </div>
 
   <div class="project-links">
-    <a class="project-ext-link btn btn-default" {{bind-attr href=repository}}>View project on Github</a>
+    <a class="project-ext-link btn btn-default" {{bind-attr href=codeUrl}}>View project on Github</a>
     <a class="project-ext-link btn btn-default" href="">Discuss on Hackpad</a>
     <a class="project-ext-link btn btn-default" href="">Share on Twitter</a>
   </div>
