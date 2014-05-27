@@ -1,4 +1,4 @@
-Brigade Front-End
+Brigade Front-End [![Build Status](https://travis-ci.org/codeforboston/brigade_frontend.svg?branch=master)](https://travis-ci.org/codeforboston/brigade_frontend)
 =================
 
 This is the front-end for the [Code for Boston](http://www.codeforboston.org/) Brigade website, running on [Ember.js](http://emberjs.com), [Bootstrap](http://getbootstrap.com/) and [Compass](http://compass-style.org/)/[Sass](http://sass-lang.com/).
