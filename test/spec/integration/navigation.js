@@ -1,4 +1,4 @@
-/*global describe, beforeEach, afterEach, visit, it, expect */
+/*global describe, beforeEach, afterEach, visit, it, expect, find */
 'use strict';
 (function () {
   describe('Navigation', function () {
