@@ -35,6 +35,16 @@ body {
   }
 }
 
+// TODO merge with .masthead, perhaps
+.headline {
+  background: $gray;
+  padding: 60px 0;
+  color: white;
+  h1 {
+    font-size: 4em;
+  }
+}
+
 .box-link:hover {
   text-decoration: none;
 }
@@ -154,9 +164,6 @@ section {
 
 
 .card-outer {
-  @include make-sm-column(6);
-  @include make-md-column(4);
-  @include make-lg-column(3);
   margin-bottom: $grid-gutter-width;
   .card-inner {
     background-color: white;

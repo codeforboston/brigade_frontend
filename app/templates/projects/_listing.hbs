@@ -1,81 +1,21 @@
 <div class="project card-outer">
-  <div class="card-inner">
-    <div class="card-flip">
-      <div class="card-front">
-        <header>
-          <div {{bind-attr style=background class=":bg background:bg-image:bg-none"}}>
-            {{#unless background}}<i class="fa fa-github"></i>{{/unless}}
-          </div>
-          {{#if linkUrl}}
-            <div class="site-btn"><a {{bind-attr href=linkUrl}} target="_blank" class="btn btn-primary">go to live site <i class="fa fa-share"></i></a></div>
-          {{/if}}
-        </header>
-        <div class="inset">
-          <ul class="project-skills">
-            {{#each skillsNeeded}}
-              <li><a href class="btn btn-sm">{{this}}</a></li>
-            {{/each}}
-          </ul>
-          {{! TODO trying to figure out the best method for simple click handlers, this seems a little weird }}
-          <h1>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h1>
-          {{!-- <h1>{{#view App.ShowCardView}}{{name}}{{/view}}</h1> --}}
-          {{!-- {{#view App.ShowCard2View}}<a href {{action 'toggleCard'}}>{{name}}</a>{{/view}} --}}
-
-          <p>{{description}}</p>
-
-          {{#if githubDetails}}
-            <div class="github-details">
-              <div class="row">
-                <div class="col-md-6">
-                  <i class="octicon octicon-history"></i> {{commitCount}} commits &bull; {{timeAgo githubDetails.updated_at}}
-                </div>
-                <div class="col-md-6">
-                  <i class="octicon octicon-organization"></i>{{githubDetails.contributors.length}} contributors
-                </div>
-                <div class="col-md-6">
-                  <i class="octicon octicon-organization"></i> {{githubDetails.open_issues_count}} open issues
-                </div>
-              </div>
-              <div class="divider"></div>
-              <div class="row">
-                <div {{bind-attr class="projectPlan:col-md-6:col-md-12"}}>
-                  <a {{bind-attr href=codeUrl}} target="_blank"><i class="fa fa-github"></i> View code on Github</a>
-                </div>
-                {{#if projectPlan}}
-                <div class="col-md-6">
-                  <a {{bind-attr href=projectPlan}}><i class="fa fa-files-o"></i> View project plan</a>
-                </div>
-                {{/if}}
-              </div>
-            </div>
-
-            {{!githubDetails.id}}
-
-          {{/if}}
-        </div>
-        {{#if skillsNeeded}}
-          <footer>
-            <div class="pull-right" style="margin-left: 4px"><a href>GET INVOLVED</a></div>
-            <i class="fa fa-exclamation-triangle"></i> {{join skillsNeeded delimiter=", "}} needed
-          </footer>
-        {{/if}}
-      </div>
-      <div class="card-back hide">
-        {{#view App.ShowCardView}}
-          back
-        {{/view}}
-        <ul>
-          {{!--     {{#each skill in skillsNeeded}}
-            <li><a href="#">{{skill}}</a></li>
-          {{/each}}
-           --}}
-        </ul>
-        <ul>
-        {{#each projectMembers}}
-          <li><img {{bind-attr src=member.gravatar}}> {{#link-to 'members.show' member}}{{member.name}}{{/link-to}}: {{role}}</li>
-        {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
+  <h2>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h2>
+  {{#if githubDetails}}
+    <ul class="list-inline">
+      <li>{{commitCount}} commits</li>
+      <li>{{timeAgo githubDetails.updated_at}}</li>
+    </ul>
+  {{/if}}
+  <p>{{description}}</p>
+  <ul class="list-inline">
+    {{#each projectMembers}}
+      <li>
+        <a {{bind-attr href=member.htmlUrl}}><img {{bind-attr src=member.avatar}} width="60" height="60" class="avatar"></a>
+      </li>
+    {{/each}}
+  </ul>
+  <ul class="list-inline">
+    {{#if codeUrl}}<li><a {{bind-attr href=codeUrl}}><i class="fa fa-github"></i> View on github</a></li>{{/if}}
+    {{#if linkUrl}}<li><a {{bind-attr href=linkUrl}}><i class="fa fa-globe"></i> View website</a></li>{{/if}}
+  </ul>
 </div>

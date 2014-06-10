@@ -1,8 +1,19 @@
-<div class="row">
-  {{#each topList}}
-    {{partial 'projects/listing'}}
-  {{/each}}
-  {{#each bottomList}}
-    {{partial 'projects/listing'}}
-  {{/each}}
+<div class="headline">
+  <div class="container">
+    <h1>Projects</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      {{#each topList}}
+        {{partial 'projects/listing'}}
+      {{/each}}
+    </div>
+    <div class="col-md-6">
+      {{#each bottomList}}
+        {{partial 'projects/listing'}}
+      {{/each}}
+    </div>
+  </div>
 </div>
