@@ -3,8 +3,8 @@
       <div class="col-sm-8 col-sm-push-2">
 
       <div class="col-sm-9">
-        <h1>{{this.firstObject.name}}</h1>
-        <p class="date">{{timeAgo this.firstObject.startTime }}</p>
+        <h1>{{upcoming.firstObject.name}}</h1>
+        <p class="date">{{timeAgo upcoming.firstObject.startTime }}</p>
       </div>
       <div class="col-sm-12">
         <a href="http://www.meetup.com/Code-for-Boston/" class="btn btn-success btn-lg col-sm-2 pull-right">RSVP</a>
@@ -15,7 +15,7 @@
 
 <section class="container">
     <h2>Events</h2>
-  {{#each}}
+  {{#each upcoming}}
     <div class="event">
       <div class="date">
         <div class="day">{{date startTime 'MMM DD'}}</div>
