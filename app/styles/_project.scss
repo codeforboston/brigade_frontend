@@ -1,3 +1,12 @@
+.projects-container {
+  @include content-columns(2);
+  .card-outer {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    padding-top: 1px;
+  }
+}
 
 // typography
 .project-name {
@@ -94,4 +103,8 @@
     }
   }
 
+}
+
+.avatar {
+  border-radius: $border-radius-base;
 }
