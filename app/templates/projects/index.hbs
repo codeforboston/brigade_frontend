@@ -3,17 +3,28 @@
     <h1>Projects</h1>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      {{#each topList}}
-        {{partial 'projects/listing'}}
-      {{/each}}
+<div class="projects-container container">
+  {{#each}}
+    <div class="project card-outer">
+      <h2>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h2>
+      {{#if githubDetails}}
+        <ul class="list-inline">
+          <li>{{commitCount}} commits</li>
+          <li>{{timeAgo githubDetails.updated_at}}</li>
+        </ul>
+      {{/if}}
+      <p>{{description}}</p>
+      <ul class="list-inline">
+        {{#each projectMembers}}
+          <li>
+            <a {{bind-attr href=member.htmlUrl}}><img {{bind-attr src=member.avatar}} width="60" height="60" class="avatar"></a>
+          </li>
+        {{/each}}
+      </ul>
+      <ul class="list-inline">
+        {{#if codeUrl}}<li><a {{bind-attr href=codeUrl}}><i class="fa fa-github"></i> View on github</a></li>{{/if}}
+        {{#if linkUrl}}<li><a {{bind-attr href=linkUrl}}><i class="fa fa-globe"></i> View website</a></li>{{/if}}
+      </ul>
     </div>
-    <div class="col-md-6">
-      {{#each bottomList}}
-        {{partial 'projects/listing'}}
-      {{/each}}
-    </div>
-  </div>
+  {{/each}}
 </div>
