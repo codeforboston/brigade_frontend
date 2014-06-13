@@ -18,6 +18,10 @@ body {
   margin-bottom: $footer-height;
 }
 
+time {
+  border-bottom: 1px dashed $gray2;
+}
+
 .masthead {
   background: url(/images/headline.jpg) no-repeat center center;
   background-size: cover;

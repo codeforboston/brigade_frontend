@@ -4,5 +4,8 @@ Ember.Handlebars.registerBoundHelper('date', function(date, format) {
 
 
 Ember.Handlebars.registerBoundHelper('timeAgo', function(date) {
-  return moment(date).fromNow();
+  var mDate = moment(date),
+      timeEl = '<time datetime="' + mDate.format() + '" title="' +
+                mDate.format('LLL') + '">' + mDate.fromNow() + '</time>';
+  return new Handlebars.SafeString(timeEl);
 });
