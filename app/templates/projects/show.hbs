@@ -1,76 +1,86 @@
-<div class="project-container">
-  {{#link-to 'projects'}}&laquo; back to all projects{{/link-to}}
+<div class="project-container container">
+    <h1 class="project-name">{{name}}</h1>
 
-  <h2 class="project-name">{{name}}</h2>
+    <heading class="project-stats">
+      <div>
+        {{#if linkUrl}}
+          <a {{bind-attr href=linkUrl}}><i class="fa fa-heart-o"></i> visit the site</a>
+        {{/if}}
+      </div>
+      <div>
+        <i class="octicon octicon-history"></i>
+        {{commitCount}} commits
+        &bull;
+        {{timeAgo githubDetails.updated_at}}
+      </div>
+      <div>
+        <i class="fa fa-exclamation-circle"></i> {{githubDetails.open_issues_count}} open issues
+      </div>
+    </heading>
 
-  <div class="project-details">
-    <h4 class="launch">
-      {{#if linkUrl}}
-        <a {{bind-attr href=linkUrl}}><i class="fa fa-heart-o"></i> visit the site</a>
-      {{/if}}
-    </h4>
-    <h4 class="last-pushed">
-      <i class="octicon octicon-history"></i> last pushed: {{githubDetails.pushed_at}}
-    </h4>
-    <h4 class="issues">
-      <i class="fa fa-exclamation-circle"></i> {{githubDetails.open_issues_count}} open issues
-    </h4>
-  </div>
-
-  <div class="project-screenshots">
-  {{#each screenshots}}
-    <img class="screenshot" {{bind-attr src=this}} alt="screenshot">
-  {{/each}}
-  </div>
-
-  <div class="project-description"><p>{{description}}</p></div>
-
-  <div class="project-contributions">
-
-    <div class="contributors">
-      <h3 class="section-title">Contributors</h3>
-      <ul>
-      {{#each projectMembers}}
-        <li class="member">
-          <img {{bind-attr src=member.avatar}} {{bind-attr alt=member.name}}>
-        </li>
+    <div class="project-screenshots">
+      {{#each screenshots}}
+        <img class="screenshot" {{bind-attr src=this}} alt="screenshot">
       {{/each}}
-      </ul>
     </div>
 
-    <div class="project-needs">
-      <h3 class="section-title">Project Needs</h3>
-        <ul>
-        {{#each skillsNeeded}}
-          <li class="skill"> {{this}} </li>
-        {{/each}}
-        </ul>
-    </div>
-  </div>
+    <p>{{description}}</p>
 
-  <div class="project-data">
-    <div class="categories">
-      <h3 class="section-title">Categories</h3>
-    </div>
-    <div class="languages">
-      <h3 class="section-title">Languages</h3>
-      <p class="language">{{githubDetails.language}}</p>
-    </div>
-    <div class="press">
-      <h3 class="section-title">Press Coverage</h3>
-       <ul>
-        {{#each pressClippings}}
-          <li class="press-item">
-            <a class="title" href="{{title}}">{{this}}</a>
-          </li>
-        {{/each}}
-        </ul>
-    </div>
-  </div>
+    <div class="project-details">
+      <div>
+        <div class="contributors">
+          <h2 class="section-title">Contributors</h2>
+          <ul class="list-inline">
+          {{#each projectMembers}}
+            <li>
+              <img {{bind-attr src=member.avatar}} {{bind-attr alt=member.name}} class="avatar">
+            </li>
+          {{/each}}
+          </ul>
+        </div>
 
-  <div class="project-links">
-    <a class="project-ext-link btn btn-default" {{bind-attr href=codeUrl}}>View project on Github</a>
-    <a class="project-ext-link btn btn-default" href="">Discuss on Hackpad</a>
-    <a class="project-ext-link btn btn-default" href="">Share on Twitter</a>
-  </div>
+        <div class="project-needs">
+          <h2 class="section-title">Project Needs</h2>
+            <ul class="list-inline">
+            {{#each skillsNeeded}}
+              <li class="skill">{{this}}</li>
+            {{/each}}
+            </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="categories">
+          <h2 class="section-title">Categories</h2>
+        </div>
+        <div class="languages">
+          <h2 class="section-title">Languages</h2>
+          <ul class="list-inline">
+            <li class="language">{{githubDetails.language}}</li>
+          </ul>
+        </div>
+        <div class="press">
+          <h2 class="section-title">Press Coverage</h2>
+           <ul>
+            {{#each pressClippings}}
+              <li class="press-item">
+                <a class="title" href="{{title}}">{{this}}</a>
+              </li>
+            {{/each}}
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-links">
+      <div class="project-ext-link"><a class="form-control btn btn-project" {{bind-attr href=codeUrl}}>
+        <i class="octicon octicon-logo-circle"></i> View project on Github
+      </a></div>
+      <div class="project-ext-link"><a class="form-control btn btn-project" href="">
+        <i class="fa fa-comments"></i> Discuss on Hackpad
+      </a></div>
+      <div class="project-ext-link"><a class="form-control btn btn-project" href="">
+        <i class="fa fa-twitter"></i> Share on Twitter
+      </a></div>
+    </div>
 </div>

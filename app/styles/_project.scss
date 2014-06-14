@@ -11,26 +11,18 @@
 // typography
 .project-name {
   text-align: center;
+  color: $cfa-red;
 }
 .section-title {
-  color: $brand-primary;
-  font-weight: 300;
+  color: $cfa-red;
 }
 
 // layout
 .project-container {
-  @include make-row;
   padding-top: 4rem;
   .project-description {
-    @include make-row;
     font-size: 1.8rem;
     border-bottom: 1px solid #ccc;
-    p {
-      @include make-sm-column(6);
-      @include make-sm-column-push(3);
-      padding: 2rem;
-      margin-bottom: 0;
-    }
   }
 
   .project-screenshots {
@@ -44,38 +36,28 @@
     }
   }
 
-  .project-details {
+  .project-stats {
     @include make-row;
-    .launch, .last-pushed, .issues {
+    &> * {
       @include make-sm-column(4);
-      padding: 2.5rem;
+      // padding: 2.5rem;
       text-align: center;
+      i {
+        color: $cfa-red;
+      }
     }
   }
 
-  .project-contributions {
-    @include make-sm-column(6);
+  .project-details {
+    @include make-row;
+    &> div {
+      @include make-sm-column(6);
+    }
 
-    .contributors, .project-needs {
-      @include make-sm-column(12);
-      ul {
-        list-style: none;
-        li {
-          display: inline-block;
-          padding: 0.5rem 1rem;
-          margin: 0.5rem;
-        }
-      }
-    }
-    .member {
-      margin: 0.5rem;
-    }
     .skill {
-      display: inline;
-      margin: 0.5rem;
       padding: 0.5rem 1rem;
       background: $gray1;
-      color: #ffffff;
+      color: white;
     }
   }
 
@@ -85,26 +67,27 @@
 
   .languages {
     .language {
-      display: inline;
-      margin: 0.5rem;
       padding: 0.5rem 1rem;
       background: $gray2;
-      color: #ffffff;
+      color: white;
 
     }
   }
 
   .project-links {
-    @include make-sm-column(12);
-    padding: 4rem;
+    @include make-row;
     .project-ext-link {
       @include make-sm-column(4);
       text-align: center;
+      .btn-project {
+        @include button-variant(white, $brand-primary, darken($brand-primary, 5%));
+      }
     }
   }
 
 }
 
 .avatar {
+  @include square(60px);
   border-radius: $border-radius-base;
 }

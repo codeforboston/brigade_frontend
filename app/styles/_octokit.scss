@@ -3,6 +3,7 @@ $octicon-css-prefix: octicon;
 
 $octicon-var-history: "\f07e";        // commits
 $octicon-var-organization: "\f019";   // contributors
+$octicon-var-logo-circle: "\f009";         // logo-o
 
 // project plan icon : fa fa-file-o
 
@@ -26,3 +27,4 @@ $octicon-var-organization: "\f019";   // contributors
 
 .#{$octicon-css-prefix}-history:before { content: $octicon-var-history; }
 .#{$octicon-css-prefix}-organization:before { content: $octicon-var-organization; }
+.#{$octicon-css-prefix}-logo-circle:before { content: $octicon-var-logo-circle; }
