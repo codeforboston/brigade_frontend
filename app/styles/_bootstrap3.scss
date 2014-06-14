@@ -5,6 +5,7 @@
 $brand-primary: #004b6a;
 $body-bg: #fafafa;
 
+$font-size-base: 16px;
 $grid-gutter-width: 16px;
 $border-radius-small: 2px;
 
@@ -35,7 +36,6 @@ h1, h2, h3 {
 .navbar {
   @include gradient-vertical($start-color: $navbar-default-bg, $end-color: darken($navbar-default-bg, 5%));
   border-width: 5px 0 0 0;
-  font-size: 1.15em;
   .navbar-nav {
     text-transform: uppercase;
     li.active { // needs li. as ember is adding 'active' class to anchor tag
@@ -77,6 +77,6 @@ h1, h2, h3 {
 
 .btn-join {
   @include button-variant(white, $blue-light, darken($blue-light, 5%));
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large * 2, $line-height-large * 1.25, $border-radius-small);
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large * 1.8, $line-height-large * 1.25, $border-radius-small);
   @include box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
 }
