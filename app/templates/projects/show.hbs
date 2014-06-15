@@ -33,7 +33,9 @@
           <ul class="list-inline">
           {{#each projectMembers}}
             <li>
-              <img {{bind-attr src=member.avatar}} {{bind-attr alt=member.name}} class="avatar">
+              <a {{bind-attr href=member.githubProfile}}>
+                <img {{bind-attr src=member.avatar}} {{bind-attr alt=member.name}} {{bind-attr title=member.name}} class="avatar">
+              </a>
             </li>
           {{/each}}
           </ul>
