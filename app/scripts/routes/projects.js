@@ -1,4 +1,4 @@
-App.ProjectsIndexRoute = Ember.Route.extend({
+App.ProjectsIndexRoute = Ember.Route.extend(App.ResetScroll, {
   model: function() {
     return this.get('store').findAll('project');
   }

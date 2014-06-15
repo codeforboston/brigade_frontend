@@ -1,4 +1,4 @@
-App.IndexRoute = Ember.Route.extend({
+App.IndexRoute = Ember.Route.extend(App.ResetScroll, {
   setupController: function(controller) {
     var store = this.get('store');
     // store.find('project', {featured: true});
