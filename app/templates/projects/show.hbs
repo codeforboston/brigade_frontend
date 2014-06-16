@@ -18,11 +18,13 @@
       </div>
     </heading>
 
+    {{#if screenshots}}
     <div class="project-screenshots">
       {{#each screenshots}}
         <img class="screenshot" {{bind-attr src=this}} alt="screenshot">
       {{/each}}
     </div>
+    {{/if}}
 
     <p>{{description}}</p>
 
@@ -81,8 +83,10 @@
       <div class="project-ext-link"><a class="form-control btn btn-project" href="">
         <i class="fa fa-comments"></i> Discuss on Hackpad
       </a></div>
-      <div class="project-ext-link"><a class="form-control btn btn-project" href="">
-        <i class="fa fa-twitter"></i> Share on Twitter
-      </a></div>
+      <div class="project-ext-link">
+        <a class="form-control btn btn-project" {{action shareOnTwitter}}>
+          <i class="fa fa-twitter"></i> Share on Twitter
+        </a>
+    </div>
     </div>
 </div>
