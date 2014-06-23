@@ -11,33 +11,33 @@
             participation: [1, 2, 3, 4],
             contributors: [
               {
-                avatarUrl: "https://avatars.githubusercontent.com/u/12058?",
+                avatar_url: "https://avatars.githubusercontent.com/u/12058?",
                 contributions: 36,
-                htmlUrl: "https://github.com/carpeliam",
+                html_url: "https://github.com/carpeliam",
                 login: "carpeliam",
                 owner: false,
                 url: "https://api.github.com/users/carpeliam"
               },
               {
-                avatarUrl: "https://avatars.githubusercontent.com/u/1397914?",
+                avatar_url: "https://avatars.githubusercontent.com/u/1397914?",
                 contributions: 15,
-                htmlUrl: "https://github.com/isaacchansky",
+                html_url: "https://github.com/isaacchansky",
                 login: "isaacchansky",
                 owner: false,
                 url: "https://api.github.com/users/isaacchansky"
               },
               {
-                avatarUrl: "https://avatars.githubusercontent.com/u/3900295?",
+                avatar_url: "https://avatars.githubusercontent.com/u/3900295?",
                 contributions: 5,
-                htmlUrl: "https://github.com/teresa-murphy-skvorzova",
+                html_url: "https://github.com/teresa-murphy-skvorzova",
                 login: "teresa-murphy-skvorzova",
                 owner: false,
                 url: "https://api.github.com/users/teresa-murphy-skvorzova"
               },
               {
-                avatarUrl: "https://avatars.githubusercontent.com/u/2136286?",
+                avatar_url: "https://avatars.githubusercontent.com/u/2136286?",
                 contributions: 2,
-                htmlUrl: "https://github.com/thecristen",
+                html_url: "https://github.com/thecristen",
                 login: "thecristen",
                 owner: false,
                 url: "https://api.github.com/users/thecristen"

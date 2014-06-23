@@ -11,6 +11,6 @@
 // });
 App.Member = Ember.Object.extend({
   name: function() { return this.get('login'); }.property('login'),
-  githubProfile: function() { return this.get('htmlUrl') }.property('htmlUrl'),
-  avatar: function() { return this.get('avatarUrl') }.property('avatarUrl')
+  githubProfile: function() { return this.get('html_url') }.property('html_url'),
+  avatar: function() { return this.get('avatar_url') }.property('avatar_url')
 });

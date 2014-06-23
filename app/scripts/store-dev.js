@@ -87,57 +87,57 @@ var projects = [
       },
       "contributors": [
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/12058?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12058?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/carpeliam",
+          "html_url": "https://github.com/carpeliam",
           "login": "carpeliam",
           "owner": false,
           "url": "https://api.github.com/users/carpeliam"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1128607?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1128607?",
           "contributions": 27,
-          "htmlUrl": "https://github.com/calvinmetcalf",
+          "html_url": "https://github.com/calvinmetcalf",
           "login": "calvinmetcalf",
           "owner": false,
           "url": "https://api.github.com/users/calvinmetcalf"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
 	      {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
@@ -251,25 +251,25 @@ var projects = [
       },
       "contributors": [
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "linkUrl": "https://api.github.com/users/haileypate"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
     	  {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
@@ -375,17 +375,17 @@ var projects = [
       },
       "contributors": [
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
@@ -496,9 +496,9 @@ var projects = [
       },
       "contributors": [
         {
-          "avatarUrl": "https://avatars.githubusercontent.com/u/1103232?",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
-          "htmlUrl": "https://github.com/haileypate",
+          "html_url": "https://github.com/haileypate",
           "login": "haileypate",
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
