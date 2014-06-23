@@ -36,7 +36,7 @@
         {{link-to '&laquo;' (query-params page=previousPage)}}
       </li>
       {{#each availablePages}}
-        {{#view App.NavView}}{{link-to this (query-params page=this)}}{{/view}}
+        {{#view App.ActiveIndicatorView}}{{link-to this (query-params page=this)}}{{/view}}
       {{/each}}
       <li {{bind-attr class="hasNextPage::disabled"}}>
         {{link-to '&raquo;' (query-params page=nextPage)}}
