@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav navbar-right">
         {{#view App.NavView}}{{#link-to 'index'}}home{{/link-to}}{{/view}}
         {{#view App.NavView}}{{#link-to 'about'}}about{{/link-to}}{{/view}}
-        {{#view App.NavView}}{{#link-to 'projects'}}projects{{/link-to}}{{/view}}
+        {{#view App.NavView}}{{#link-to 'projects' (query-params page=1)}}projects{{/link-to}}{{/view}}
         {{!-- {{#view App.NavView}}{{#link-to 'members'}}members{{/link-to}}{{/view}} --}}
         {{#view App.NavView}}{{#link-to 'events'}}events{{/link-to}}{{/view}}
         {{#view App.NavView}}{{#link-to 'connect'}}connect{{/link-to}}{{/view}}
