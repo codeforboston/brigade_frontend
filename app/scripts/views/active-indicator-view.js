@@ -1,4 +1,4 @@
-App.NavView = Ember.View.extend({
+App.ActiveIndicatorView = Ember.View.extend({
   tagName: 'li',
   classNameBindings: ['isActive:active'],
 

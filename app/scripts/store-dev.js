@@ -12,7 +12,11 @@ App.Adapter = DS.FixtureAdapter.extend({
 });
 
 App.Store = DS.Store.extend({
-  adapter: App.Adapter
+  adapter: App.Adapter,
+  // assume any query should return all results (otherwise, paginated requests return no results)
+  findQuery: function() {
+    return this.findAll.call(this, arguments[0]);
+  }
 });
 
 
@@ -1388,3 +1392,4 @@ App.Project.FIXTURES = projects;
 App.ProjectMember.FIXTURES = projectMembers;
 App.Member.FIXTURES = members;
 App.Event.FIXTURES = events;
+
