@@ -277,7 +277,8 @@ module.exports = function (grunt) {
                         dest: '<%= yeoman.app %>/styles/fonts/',
                         src: [
                             'bootstrap-sass-official/vendor/assets/fonts/bootstrap/**', // Bootstrap
-                            'font-awesome/fonts/**' // Font-Awesome
+                            'font-awesome/fonts/**', // Font-Awesome
+                            'octicons/octicons/*.{ttf,eot,svg,woff}' // Octicons
                         ]
                     }
                 ]
