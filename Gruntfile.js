@@ -1,4 +1,4 @@
-// Generated on 2014-05-16 using generator-ember 0.8.3
+// Generated on 2014-05-16 using generator-ember 0.8.4
 'use strict';
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
@@ -276,7 +276,7 @@ module.exports = function (grunt) {
                         cwd: '<%= bowerrc.directory %>',
                         dest: '<%= yeoman.app %>/styles/fonts/',
                         src: [
-                            'bootstrap-sass/dist/fonts/**', // Bootstrap
+                            'bootstrap-sass-official/vendor/assets/fonts/bootstrap/**', // Bootstrap
                             'font-awesome/fonts/**' // Font-Awesome
                         ]
                     }
@@ -325,7 +325,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    '.tmp/scripts/compiled-templates.js': '<%= yeoman.app %>/templates/{,*/}*.hbs'
+                    '.tmp/scripts/compiled-templates.js': '<%= yeoman.app %>/templates/**/*.hbs'
                 }
             }
         },
