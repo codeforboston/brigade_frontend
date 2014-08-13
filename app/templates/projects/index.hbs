@@ -6,7 +6,7 @@
 <div class="projects-container container">
   {{#each}}
     <div class="project card-outer">
-      <h2>{{#link-to 'projects.show' this}}{{name}}{{/link-to}}</h2>
+      <h2>{{#link-to 'project' this}}{{name}}{{/link-to}}</h2>
       {{#if githubDetails}}
         <ul class="list-inline">
           <li>{{commitCount}} commits</li>

@@ -20,10 +20,7 @@ App.ProjectsIndexRoute = Ember.Route.extend(App.ResetScroll, {
   }
 });
 
-App.ProjectsShowRoute = Ember.Route.extend({
-  model: function(params) {
-    return this.get('store').find('project', params.project_id);
-  },
+App.ProjectRoute = Ember.Route.extend({
   actions: {
     shareOnTwitter: function() {
       var url = encodeURIComponent(window.location.href),

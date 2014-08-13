@@ -2,7 +2,7 @@
 {{#each}}
   <li>
     <img {{bind-attr src=avatar}}>
-    {{#link-to 'members.show' this}}{{name}}{{/link-to}}<br>
+    {{#link-to 'member' this}}{{name}}{{/link-to}}<br>
     projects:
     <ul>
     {{#each projectMemberships}}
