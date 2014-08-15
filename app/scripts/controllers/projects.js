@@ -24,3 +24,12 @@ App.ProjectsIndexController = Ember.ArrayController.extend({
     return pages;
   }.property('lastPage')
 });
+
+App.ProjectController = Ember.ObjectController.extend({
+  background: function() {
+    var screenshots = this.getWithDefault('model.screenshots', []);
+    if (screenshots.length) {
+      return 'background-image: url(' + screenshots[0] + ')';
+    }
+  }.property('model.screenshots')
+});

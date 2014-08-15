@@ -23,12 +23,6 @@ App.Project = DS.Model.extend({
     }
     return count;
   }.property('githubDetails'),
-  // TODO move this into the controller
-  background: function() {
-    if (this.getWithDefault('screenshots', []).length) {
-      return 'background-image: url(' + this.get('screenshots')[0] + ')';
-    }
-  }.property('screenshots'),
 
   // TODO use relationship when available in API
   projectMembers: function() {
