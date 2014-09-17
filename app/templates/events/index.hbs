@@ -8,20 +8,19 @@
   </div>
 </div>
 
-<section class="container">
-    <h2>Events</h2>
+<div class="container">
+  <h2>Events</h2>
   {{#each upcoming}}
     <div class="event">
-      <div class="date">
-        <div class="day">{{date startTime 'MMM DD'}}</div>
-        <div class="time">{{date startTime 'hh:mm a'}}</div>
+      <div class="event-date">
+        <div class="event-day">{{date startTime 'MMM Do'}}</div>
+        <div class="event-time">{{date startTime 'h:mm a'}}</div>
       </div>
-      <div class="col-sm-9">
-        <h3 class="text-left"><a {{bind-attr href=eventUrl }} target="_blank">{{name}}</a></h3>
+      <div class="event-description">
+        <h2><a {{bind-attr href=eventUrl}} target="_blank">{{name}}</a></h2>
         <p>{{{description}}}</p>
-
       </div>
     </div>
     <hr>
   {{/each}}
-</section>
+</div>
