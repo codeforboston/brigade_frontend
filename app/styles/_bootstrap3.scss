@@ -80,4 +80,5 @@ h1, h2, h3 {
   @include button-variant(white, $blue-light, darken($blue-light, 5%));
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large * 1.8, $line-height-large * 1.25, $border-radius-small);
   @include box-shadow(0 2px 3px 0 rgba(0,0,0,.25));
+  white-space: normal; //allows text wrap. 
 }
