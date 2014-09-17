@@ -26,7 +26,7 @@ time {
   @include slab($cfa-white);
   background: url(/images/headline.jpg) no-repeat center center;
   background-size: cover;
-  height: 250px;
+  min-height: 250px;
   header {
     padding-top: 90px;
     font-size: 36px;
