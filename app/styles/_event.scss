@@ -1,11 +1,9 @@
-.featured-event {
+.featured-event { 
+  @include slab($cfa-dark-blue,$cfa-teal); 
   .date {
     font-size: 2em;
-    margin-left: 1em;
   }
 }
-
-.featured-event { @include slab($cfa-dark-blue,$cfa-teal); }
 
 .event {
   @include make_row;
