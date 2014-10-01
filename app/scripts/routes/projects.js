@@ -11,10 +11,10 @@ App.ProjectsIndexRoute = Ember.Route.extend(App.ResetScroll, {
     this._super(controller, model);
     var pages = this.get('store').metadataFor('project').pages;
     if (pages) {
-      var prevPage = pages.prev && parseInt(pages.prev.slice(-1)),
-          nextPage = pages.next && parseInt(pages.next.slice(-1)),
+      var prevPage = pages.prev && parseInt(pages.prev.slice(-1), 10),
+          nextPage = pages.next && parseInt(pages.next.slice(-1), 10),
           currentPage = (nextPage && nextPage - 1) || (prevPage && prevPage + 1) || 1,
-          lastPage = (pages.last && parseInt(pages.last.slice(-1))) || currentPage;
+          lastPage = (pages.last && parseInt(pages.last.slice(-1), 10)) || currentPage;
       controller.set('lastPage', lastPage);
     }
   }

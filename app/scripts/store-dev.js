@@ -270,7 +270,7 @@ var projects = [
           "owner": false,
           "url": "https://api.github.com/users/haileypate"
         },
-    	  {
+        {
           "avatar_url": "https://avatars.githubusercontent.com/u/1103232?",
           "contributions": 4,
           "html_url": "https://github.com/haileypate",
