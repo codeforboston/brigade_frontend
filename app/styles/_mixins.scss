@@ -1,0 +1,15 @@
+//ex slab($cfa-dark-blue,$cfa-teal)
+//based off the slabs in the CfA style guide
+@mixin slab($bg: $cfa-red,$text: $cfa-white) {
+	background: $bg;
+	color: $text;
+	clear: both;
+	width: 100%;
+	padding: 1em 2%;
+	font-size: 1.3em;
+	display: block;
+	h1 {
+		font-size: 2em;
+		text-shadow: $cfa-dark-gray 1px 1px 10px;
+	}
+}

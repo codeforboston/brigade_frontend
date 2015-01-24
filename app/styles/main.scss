@@ -23,31 +23,23 @@ time {
 }
 
 .masthead {
+  @include slab($cfa-white);
   background: url(/images/headline.jpg) no-repeat center center;
   background-size: cover;
-  color: white;
-  position: relative;
-  text-shadow: $gray 0 2px;
-  height: 250px;
+  min-height: 250px;
   header {
     padding-top: 90px;
     font-size: 36px;
     h1 {
-      font-size: 90px;
       margin-top: 0;
     }
   }
 }
 
-// TODO merge with .masthead, perhaps
 .headline {
-  background: $gray;
-  padding: 60px 0;
-  color: white;
-  h1 {
-    font-size: 4em;
-  }
+  @include slab($cfa-dark-blue,$cfa-white);
 }
+
 
 .box-link:hover {
   text-decoration: none;

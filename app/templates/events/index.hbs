@@ -1,32 +1,26 @@
-<div class="featured-event headline">
+<div class="featured-event">
   <div class="container">
-      <div class="col-sm-8 col-sm-push-2">
-
-      <div class="col-sm-9">
+      <div class="col-sm-9 col-sm-push-3">
         <h1>{{upcoming.firstObject.name}}</h1>
         <p class="date">{{timeAgo upcoming.firstObject.startTime }}</p>
-      </div>
-      <div class="col-sm-12">
-        <a href="http://www.meetup.com/Code-for-Boston/" class="btn btn-success btn-lg col-sm-2 pull-right">RSVP</a>
-      </div>
+        <a href="http://www.meetup.com/Code-for-Boston/" class="btn btn-success btn-lg col-sm-2">RSVP</a>
     </div>
   </div>
 </div>
 
-<section class="container">
-    <h2>Events</h2>
+<div class="container">
+  <h2>Events</h2>
   {{#each upcoming}}
     <div class="event">
-      <div class="date">
-        <div class="day">{{date startTime 'MMM DD'}}</div>
-        <div class="time">{{date startTime 'hh:mm a'}}</div>
+      <div class="event-date">
+        <div class="event-day">{{date startTime 'MMM Do'}}</div>
+        <div class="event-time">{{date startTime 'h:mm a'}}</div>
       </div>
-      <div class="col-sm-9">
-        <h3 class="text-left"><a {{bind-attr href=eventUrl }} target="_blank">{{name}}</a></h3>
+      <div class="event-description">
+        <h2><a {{bind-attr href=eventUrl}} target="_blank">{{name}}</a></h2>
         <p>{{{description}}}</p>
-
       </div>
     </div>
     <hr>
   {{/each}}
-</section>
+</div>
